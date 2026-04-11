@@ -10,15 +10,15 @@
 	<!-- Story Hero -->
 	<section class="mx-auto mb-32 max-w-[1440px] px-12">
 		<div class="max-w-4xl">
-			<span class="text-primary font-label mb-4 block text-xs font-bold tracking-widest uppercase"
+			<span class="mb-4 block font-label text-xs font-bold tracking-widest text-primary uppercase"
 				>The Narrative</span
 			>
 			<h1
-				class="font-headline text-on-surface mb-12 text-7xl leading-none tracking-tighter md:text-9xl"
+				class="mb-12 font-headline text-7xl leading-none tracking-tighter text-on-surface md:text-9xl"
 			>
 				A Story of <br /><span class="serif-italic text-primary">Structure &amp; Soul</span>.
 			</h1>
-			<p class="text-on-surface-variant font-body max-w-2xl text-2xl leading-relaxed">
+			<p class="max-w-2xl font-body text-2xl leading-relaxed text-on-surface-variant">
 				Beyond the spreadsheets and algorithms, my journey is one of constant curiosity—from the
 				logic of code to the vibrant pulse of Amsterdam's streets.
 			</p>
@@ -39,31 +39,31 @@
 						alt="Vintage university library with tall wooden shelves and a single focused student"
 						src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPVWgBttZ2q2sQmAMboe_fVxM97j96o_gUSEEwhdhxNmWn2SVoWRQJfZevFiRqIPQ_mIe07rpmPjKLSnRbWSV9hgm5T6YzvtvKwjhd1bDYq0uFB9JEysOluZhDGP_Kt8pCW1gOZ1IGlbQrnFVC56XvvT0PZIj7yPCV6N1v1ygJVQzlmxPuY7oHZNhPX03pCJLnc3OioxFEaPpNTBAaEbSK1LoE7WohjT77NRPvS8z4ZKGoz2jKDTN7bcRpJethjSH4gNzQWrMJtq8"
 					/>
-					<div class="bg-primary/10 absolute inset-0 mix-blend-multiply"></div>
+					<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
 				</div>
 			</div>
 			<div class="relative order-1 lg:order-2 lg:pl-12">
 				<div
-					class="bg-primary absolute top-8 -left-[calc(16rem+1px)] z-10 hidden h-8 w-8 rounded-full border-4 border-white lg:block"
+					class="absolute top-8 -left-[calc(16rem+1px)] z-10 hidden h-8 w-8 rounded-full border-4 border-white bg-primary lg:block"
 				></div>
-				<span class="font-label text-primary mb-4 block text-sm font-bold tracking-widest uppercase"
+				<span class="mb-4 block font-label text-sm font-bold tracking-widest text-primary uppercase"
 					>2016 — 2020</span
 				>
-				<h2 class="font-headline mb-6 text-5xl">
+				<h2 class="mb-6 font-headline text-5xl">
 					The Binary <span class="serif-italic">Origins</span>
 				</h2>
-				<p class="text-on-surface-variant mb-6 text-lg leading-relaxed">
+				<p class="mb-6 text-lg leading-relaxed text-on-surface-variant">
 					It began with a Bachelor's in Computer Science. My world was defined by syntax and logic.
 					I learned that data wasn't just numbers—it was a language waiting to be translated into
 					meaning. This academic rigor shaped my obsession with structural integrity.
 				</p>
 				<div class="flex gap-4">
-					<div class="bg-surface-container rounded-lg p-3">
+					<div class="rounded-lg bg-surface-container p-3">
 						<span class="material-symbols-outlined text-primary">school</span>
 					</div>
 					<div>
 						<p class="text-sm font-bold">BSc Computer Science</p>
-						<p class="text-on-surface-variant text-xs tracking-wide uppercase">
+						<p class="text-xs tracking-wide text-on-surface-variant uppercase">
 							Focus: Algorithmic Efficiency
 						</p>
 					</div>
@@ -74,16 +74,16 @@
 		<div class="relative mb-40 grid grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-32">
 			<div class="relative text-right lg:pr-12">
 				<div
-					class="bg-secondary absolute top-8 -right-[calc(16rem+1px)] z-10 hidden h-8 w-8 rounded-full border-4 border-white lg:block"
+					class="absolute top-8 -right-[calc(16rem+1px)] z-10 hidden h-8 w-8 rounded-full border-4 border-white bg-secondary lg:block"
 				></div>
 				<span
-					class="font-label text-secondary mb-4 block text-sm font-bold tracking-widest uppercase"
+					class="mb-4 block font-label text-sm font-bold tracking-widest text-secondary uppercase"
 					>2021 — 2022</span
 				>
-				<h2 class="font-headline mb-6 text-5xl">
+				<h2 class="mb-6 font-headline text-5xl">
 					Scaling <span class="serif-italic">Perspectives</span>
 				</h2>
-				<p class="text-on-surface-variant mb-6 text-lg leading-relaxed">
+				<p class="mb-6 text-lg leading-relaxed text-on-surface-variant">
 					Transitioning to a Master's in Big Data Analytics shifted my focus from micro-logic to
 					macro-patterns. I learned to navigate the noise of massive datasets, finding the signal
 					that drives strategic decisions. It was here I realized that data is the ultimate
@@ -92,11 +92,11 @@
 				<div class="flex justify-end gap-4">
 					<div class="text-right">
 						<p class="text-sm font-bold">MSc Big Data Analytics</p>
-						<p class="text-on-surface-variant text-xs tracking-wide uppercase">
+						<p class="text-xs tracking-wide text-on-surface-variant uppercase">
 							Specialization: Machine Learning
 						</p>
 					</div>
-					<div class="bg-secondary-container/30 rounded-lg p-3">
+					<div class="rounded-lg bg-secondary-container/30 p-3">
 						<span class="material-symbols-outlined text-secondary">data_exploration</span>
 					</div>
 				</div>
@@ -108,7 +108,7 @@
 						alt="Abstract network of glowing blue nodes and connecting lines representing big data scale"
 						src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKWtFoEcwQwVKtXxUKzDlEG5A0ew24nTUhNc8uPHXpkWRqpNN15xwgqjFYDgJWyUuZCP2z9DX6OhAJ4dSXalf6tS6pzTuV3gkatjgXLIHJJLBOw38q6zUdEu2bb5DnWgQnZ7Za3553YHO11kYmVLWNz49nLvc0ZtV-0wy8eF0ULC_wC1PUsqEK1faSTt1n3M-ySRG4S1BgfIa8WN8ovjJgVZbQrB34TU-9rUGQvv7MLEQNIqX3jKq0vmEf235cWOelsBlEgafnap4"
 					/>
-					<div class="bg-secondary/10 absolute inset-0 mix-blend-multiply"></div>
+					<div class="absolute inset-0 bg-secondary/10 mix-blend-multiply"></div>
 				</div>
 			</div>
 		</div>
@@ -121,33 +121,33 @@
 						alt="A foggy morning over an Amsterdam canal with bicycles parked on a bridge"
 						src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3A67SCeaEtV8VUB7fUQ3n2-iicz2GZVONJN7mUdFg3TY_1xYH7Zg2aO_UbFgQwripPWklx5D8VO7cA9U6JzyHxpaghtRyJ8fOxF4L-G2HGKTUNfCKaEREV6vagbWmg2Q9jHh1IPxWj5CC7OIFOyThemmL8WD-wkFYwT7XS0DW1rQw6nHimfI-vNLGjtct8CfhjA4UjB5lz9d1IZt4WiGLHZC2QKdIINn80-puR2EEN0uW_OV--1wAKCK9FLYlS87eZmDvWz_5tFc"
 					/>
-					<div class="bg-tertiary/10 absolute inset-0 mix-blend-multiply"></div>
+					<div class="absolute inset-0 bg-tertiary/10 mix-blend-multiply"></div>
 				</div>
 			</div>
 			<div class="relative order-1 lg:order-2 lg:pl-12">
 				<div
-					class="bg-tertiary absolute top-8 -left-[calc(16rem+1px)] z-10 hidden h-8 w-8 rounded-full border-4 border-white lg:block"
+					class="absolute top-8 -left-[calc(16rem+1px)] z-10 hidden h-8 w-8 rounded-full border-4 border-white bg-tertiary lg:block"
 				></div>
 				<span
-					class="font-label text-tertiary mb-4 block text-sm font-bold tracking-widest uppercase"
+					class="mb-4 block font-label text-sm font-bold tracking-widest text-tertiary uppercase"
 					>2023 — Present</span
 				>
-				<h2 class="font-headline mb-6 text-5xl">
+				<h2 class="mb-6 font-headline text-5xl">
 					The Amsterdam <span class="serif-italic">Synthesis</span>
 				</h2>
-				<p class="text-on-surface-variant mb-6 text-lg leading-relaxed">
+				<p class="mb-6 text-lg leading-relaxed text-on-surface-variant">
 					Moving to Amsterdam wasn't just a change of location; it was a change of rhythm. The
 					city's blend of historic charm and cutting-edge tech innovation became my new home. Today,
 					I work as a Data Analyst, bridging the gap between technical complexity and business
 					intelligence.
 				</p>
 				<div class="flex gap-4">
-					<div class="bg-tertiary-container/30 rounded-lg p-3">
+					<div class="rounded-lg bg-tertiary-container/30 p-3">
 						<span class="material-symbols-outlined text-tertiary">location_city</span>
 					</div>
 					<div>
 						<p class="text-sm font-bold">Living &amp; Working</p>
-						<p class="text-on-surface-variant text-xs tracking-wide uppercase">Amsterdam, NL</p>
+						<p class="text-xs tracking-wide text-on-surface-variant uppercase">Amsterdam, NL</p>
 					</div>
 				</div>
 			</div>
@@ -158,13 +158,13 @@
 		<div class="mx-auto max-w-[1440px]">
 			<div class="mb-20 flex flex-col items-end justify-between gap-8 md:flex-row">
 				<div class="max-w-xl">
-					<span class="text-primary font-label text-xs font-bold tracking-widest uppercase"
+					<span class="font-label text-xs font-bold tracking-widest text-primary uppercase"
 						>Human Elements</span
 					>
-					<h2 class="font-headline mt-4 text-6xl">
+					<h2 class="mt-4 font-headline text-6xl">
 						Beyond the <span class="serif-italic">Data</span>
 					</h2>
-					<p class="text-on-surface-variant mt-6 text-lg">
+					<p class="mt-6 text-lg text-on-surface-variant">
 						When the screens turn off, I find inspiration in the analog world. These moments fuel
 						the creativity I bring back to my work.
 					</p>
@@ -180,8 +180,8 @@
 						/>
 					</div>
 					<div>
-						<h3 class="font-headline mb-2 text-3xl">Street Photography</h3>
-						<p class="text-on-surface-variant leading-relaxed">
+						<h3 class="mb-2 font-headline text-3xl">Street Photography</h3>
+						<p class="leading-relaxed text-on-surface-variant">
 							Capturing the fleeting geometry of urban life. It's my way of collecting data points
 							without the numbers.
 						</p>
@@ -196,8 +196,8 @@
 						/>
 					</div>
 					<div>
-						<h3 class="font-headline mb-2 text-3xl">Contemporary Fiction</h3>
-						<p class="text-on-surface-variant leading-relaxed">
+						<h3 class="mb-2 font-headline text-3xl">Contemporary Fiction</h3>
+						<p class="leading-relaxed text-on-surface-variant">
 							Exploring human narratives through literature. I believe empathy is the most important
 							skill for an analyst.
 						</p>
@@ -212,8 +212,8 @@
 						/>
 					</div>
 					<div>
-						<h3 class="font-headline mb-2 text-3xl">Canal Cycling</h3>
-						<p class="text-on-surface-variant leading-relaxed">
+						<h3 class="mb-2 font-headline text-3xl">Canal Cycling</h3>
+						<p class="leading-relaxed text-on-surface-variant">
 							My daily meditation. Navigating the veins of Amsterdam keeps my thoughts moving and my
 							perspective fresh.
 						</p>
@@ -223,7 +223,7 @@
 		</div>
 	</section>
 	<!-- Final CTA -->
-	<section class="relative mx-auto max-w-[1440px] px-12 py-40 text-center">
+	<section class="relative px-12 py-40 text-center">
 		<!-- Decorative atmospheric image backdrop -->
 		<div class="absolute inset-0 -z-10 opacity-5">
 			<img
@@ -232,21 +232,21 @@
 				src="https://lh3.googleusercontent.com/aida-public/AB6AXuBanjwMDo-H8K25oBdMNwZeS3N09O9Vvv6WLEFIr4iawFGSnFoRkaQEsYPtrIrwYCkwHLIA6tTzL37AdPcCUCXK8BDqCGN4kKAPC2DXzDj27kWHxK5Vd24UZqWA2oDEzRri6cvl5NQukWvUphdoiFIUj1O9Wbuvw1olpgyveITbUpjxhUUBNBmicfi2Pzru8BthZtchX396cNAmUspN6InAXqIbPPTNDaM6sIEPauDluOkDI9bZyzDAGyWpMIAEWNrsDppNZb9e8IM"
 			/>
 		</div>
-		<h2 class="font-headline mb-8 text-6xl md:text-8xl">
+		<h2 class="mb-8 font-headline text-6xl md:text-8xl">
 			Ready to write <br /><span class="serif-italic">the next chapter?</span>
 		</h2>
-		<p class="text-on-surface-variant mx-auto mb-12 max-w-xl text-xl leading-relaxed">
+		<p class="mx-auto mb-12 max-w-xl text-xl leading-relaxed text-on-surface-variant">
 			Whether it's a complex data challenge or a creative collaboration, I'm always looking for the
 			next meaningful project.
 		</p>
 		<div class="flex flex-col items-center justify-center gap-6 sm:flex-row">
 			<button
-				class="bg-primary text-on-primary font-label hover:bg-primary-dim hover:shadow-primary/20 rounded-full px-12 py-5 text-sm font-bold tracking-widest uppercase shadow-xl transition-all"
+				class="rounded-full bg-primary px-12 py-5 font-label text-sm font-bold tracking-widest text-on-primary uppercase shadow-xl transition-all hover:bg-primary-dim hover:shadow-primary/20"
 			>
 				Hire Me
 			</button>
 			<button
-				class="text-on-surface border-outline font-label hover:bg-surface-container rounded-full border px-12 py-5 text-sm font-bold tracking-widest uppercase transition-all"
+				class="rounded-full border border-outline px-12 py-5 font-label text-sm font-bold tracking-widest text-on-surface uppercase transition-all hover:bg-surface-container"
 			>
 				View Portfolio
 			</button>

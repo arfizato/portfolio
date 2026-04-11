@@ -15,18 +15,18 @@
 		></div>
 		<div class="relative z-10 max-w-4xl text-center">
 			<div
-				class="bg-secondary-container text-on-secondary-container mb-8 inline-flex items-center gap-2 rounded-md px-4 py-1"
+				class="mb-8 inline-flex items-center gap-2 rounded-md bg-secondary-container px-4 py-1 text-on-secondary-container"
 			>
 				<span class="material-symbols-outlined text-sm">science</span>
-				<span class="font-label text-xs font-semibold uppercase tracking-[0.2em]"
+				<span class="font-label text-xs font-semibold tracking-[0.2em] uppercase"
 					>Scholarly Inquiry &bull; Vol. 04</span
 				>
 			</div>
-			<h1 class="font-headline text-on-surface mb-8 text-6xl leading-[1.1] italic md:text-8xl">
+			<h1 class="mb-8 font-headline text-6xl leading-[1.1] text-on-surface italic md:text-8xl">
 				The Spectral Rhythm of Global Trade
 			</h1>
 			<p
-				class="font-body text-on-surface-variant mx-auto max-w-2xl text-xl leading-relaxed md:text-2xl"
+				class="mx-auto max-w-2xl font-body text-xl leading-relaxed text-on-surface-variant md:text-2xl"
 			>
 				A deep-layered decomposition of seasonal maritime data, exploring the unseen frequencies
 				that drive our interconnected markets.
@@ -34,22 +34,21 @@
 			<div class="mt-12 flex items-center justify-center gap-6">
 				<div class="flex items-center gap-3">
 					<img
-						class="border-surface-container-lowest h-12 w-12 rounded-full border-2 object-cover"
+						class="h-12 w-12 rounded-full border-2 border-surface-container-lowest object-cover"
 						alt="Portrait of Dr. Julian Vane"
 						src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO3S7PjefllO57kV8BdcRk2wHRu1Fmmr9JYDFfC0tb15SHFhaZUDVBOHnatyCLohaOF-R0J2om-WUUybpvh1KrwJL4mzxLn4vFTypuajSrfbRvAQqmr08bGDw24-acNKveB4PMhzq0ig0VLE-Aymia79lC90AbuCtzGePuCUorUfG_9ajHHVjWqIojre1B99DWJx2LL7PBWO1KvMDvD0qaJLIr14IhDLGb_P18e4H1WophXWcwcAUzkgrCOL8UDD4T_abfFKp7EGg"
 					/>
 					<div class="text-left">
-						<span class="font-label text-on-surface block text-sm font-bold">Dr. Julian Vane</span
-						>
-						<span class="font-label text-on-surface-variant block text-xs">Lead Researcher</span>
+						<span class="block font-label text-sm font-bold text-on-surface">Dr. Julian Vane</span>
+						<span class="block font-label text-xs text-on-surface-variant">Lead Researcher</span>
 					</div>
 				</div>
-				<div class="bg-outline-variant/30 h-8 w-px"></div>
+				<div class="h-8 w-px bg-outline-variant/30"></div>
 				<div class="text-left">
-					<span class="font-label text-on-surface-variant block text-xs uppercase tracking-widest"
+					<span class="block font-label text-xs tracking-widest text-on-surface-variant uppercase"
 						>Published</span
 					>
-					<span class="font-label text-on-surface block text-sm font-bold">Oct 14, 2024</span>
+					<span class="block font-label text-sm font-bold text-on-surface">Oct 14, 2024</span>
 				</div>
 			</div>
 		</div>
@@ -58,9 +57,9 @@
 	<!-- Project Introduction Section -->
 	<section class="bg-surface px-12 py-24">
 		<div class="mx-auto grid max-w-[1440px] grid-cols-1 gap-16 md:grid-cols-12">
-			<div class="md:col-start-2 md:col-span-5">
-				<h2 class="font-headline text-on-surface mb-8 text-4xl">The Premise of Complexity</h2>
-				<div class="font-body text-on-surface-variant space-y-6 text-lg leading-relaxed">
+			<div class="md:col-span-5 md:col-start-2">
+				<h2 class="mb-8 font-headline text-4xl text-on-surface">The Premise of Complexity</h2>
+				<div class="space-y-6 font-body text-lg leading-relaxed text-on-surface-variant">
 					<p>
 						In the grand tapestry of global logistics, every vessel leaving port is a data point in
 						a much larger, harmonic oscillation. This entry examines the hypothesis that maritime
@@ -73,12 +72,12 @@
 						underlying structural skeleton of global movement.
 					</p>
 				</div>
-				<div class="bg-surface-container-low border-primary mt-12 rounded-xl border-l-4 p-8">
+				<div class="mt-12 rounded-xl border-l-4 border-primary bg-surface-container-low p-8">
 					<span
-						class="material-symbols-outlined text-primary mb-4"
+						class="material-symbols-outlined mb-4 text-primary"
 						style="font-variation-settings: 'FILL' 1;">terminal</span
 					>
-					<code class="font-body text-on-surface-variant block text-sm leading-loose">
+					<code class="block font-body text-sm leading-loose text-on-surface-variant">
 						df.decompose(period=365, model='multiplicative')<br />
 						result.plot().show()
 					</code>
@@ -91,7 +90,7 @@
 						alt="Abstract architectural photograph of modern glass buildings"
 						src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdaOjoLoiZYgr3_RVbqP4qvCAIMi2v1P0ChO_pUEZAXVpnvLQ8HKAUn88fwWo4ZPBhR93ARs9hQdbrNTdKDOir0mRc2eVp4goYMmIBzwlZSQCw0qFXe5bS_cpx1lctB0_UDFaTbNIlmbNkIQVNEcUWEo0uCuG2eTvkET1ikfKlshVA6vAVa4rM7ses_P-tbLoRaU1RZ3JsnF97Jo0tLmgX2i9otP1KUFiqWRlzy0KEX2v0J45rVObx7EKwu5yYlnrYksdzzwwl62g"
 					/>
-					<div class="bg-primary/10 absolute inset-0 backdrop-blur-[2px]"></div>
+					<div class="absolute inset-0 bg-primary/10 backdrop-blur-[2px]"></div>
 				</div>
 			</div>
 		</div>
@@ -101,89 +100,89 @@
 	<section class="bg-surface-container-low px-12 py-24">
 		<div class="mx-auto max-w-[1440px]">
 			<div class="mb-16 text-center">
-				<h2 class="font-headline text-on-surface mb-4 text-4xl italic">Observation Layers</h2>
-				<div class="bg-primary-fixed-dim mx-auto h-px w-24"></div>
+				<h2 class="mb-4 font-headline text-4xl text-on-surface italic">Observation Layers</h2>
+				<div class="mx-auto h-px w-24 bg-primary-fixed-dim"></div>
 			</div>
 			<div class="grid grid-cols-1 gap-6 md:grid-cols-4">
 				<!-- Chart A-1 -->
 				<div
-					class="bg-surface-container-lowest flex min-h-[400px] flex-col justify-between rounded-xl p-10 md:col-span-2"
+					class="flex min-h-[400px] flex-col justify-between rounded-xl bg-surface-container-lowest p-10 md:col-span-2"
 				>
 					<div>
-						<span class="font-label text-primary text-xs font-bold uppercase tracking-widest"
+						<span class="font-label text-xs font-bold tracking-widest text-primary uppercase"
 							>Chart A-1</span
 						>
-						<h3 class="font-headline text-on-surface mt-2 mb-6 text-2xl">
+						<h3 class="mt-2 mb-6 font-headline text-2xl text-on-surface">
 							Seasonal Variance Density
 						</h3>
 					</div>
 					<div class="flex h-48 flex-grow items-end justify-between gap-2">
-						<div class="bg-primary-container h-[40%] w-full rounded-t-lg"></div>
-						<div class="bg-primary-container h-[65%] w-full rounded-t-lg"></div>
-						<div class="bg-primary-container h-[90%] w-full rounded-t-lg"></div>
-						<div class="bg-secondary-container h-[75%] w-full rounded-t-lg"></div>
-						<div class="bg-primary-container h-[45%] w-full rounded-t-lg"></div>
-						<div class="bg-primary-container h-[30%] w-full rounded-t-lg"></div>
-						<div class="bg-primary-container h-[55%] w-full rounded-t-lg"></div>
+						<div class="h-[40%] w-full rounded-t-lg bg-primary-container"></div>
+						<div class="h-[65%] w-full rounded-t-lg bg-primary-container"></div>
+						<div class="h-[90%] w-full rounded-t-lg bg-primary-container"></div>
+						<div class="h-[75%] w-full rounded-t-lg bg-secondary-container"></div>
+						<div class="h-[45%] w-full rounded-t-lg bg-primary-container"></div>
+						<div class="h-[30%] w-full rounded-t-lg bg-primary-container"></div>
+						<div class="h-[55%] w-full rounded-t-lg bg-primary-container"></div>
 					</div>
-					<p class="font-body text-on-surface-variant mt-6 text-sm italic">
+					<p class="mt-6 font-body text-sm text-on-surface-variant italic">
 						Visualizing the relative weight of seasonal adjustments over a 10-year horizon.
 					</p>
 				</div>
 				<!-- Highlight Card -->
 				<div
-					class="bg-primary text-on-primary flex flex-col justify-center rounded-xl p-10 text-center"
+					class="flex flex-col justify-center rounded-xl bg-primary p-10 text-center text-on-primary"
 				>
-					<span class="font-headline mb-2 text-6xl italic">98.2%</span>
-					<span class="font-label text-sm uppercase tracking-widest opacity-80"
+					<span class="mb-2 font-headline text-6xl italic">98.2%</span>
+					<span class="font-label text-sm tracking-widest uppercase opacity-80"
 						>Correlation Index</span
 					>
 				</div>
 				<!-- Technical Detail -->
-				<div class="bg-surface-container-lowest rounded-xl p-10">
-					<span class="material-symbols-outlined text-secondary mb-4 text-3xl">analytics</span>
-					<h4 class="font-label text-on-surface mb-2 font-bold">Stochastic Modeling</h4>
-					<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+				<div class="rounded-xl bg-surface-container-lowest p-10">
+					<span class="material-symbols-outlined mb-4 text-3xl text-secondary">analytics</span>
+					<h4 class="mb-2 font-label font-bold text-on-surface">Stochastic Modeling</h4>
+					<p class="font-body text-sm leading-relaxed text-on-surface-variant">
 						Applying Monte Carlo simulations to predict maritime route deviations under extreme
 						climatic stressors.
 					</p>
 				</div>
 				<!-- Route Efficiency -->
 				<div
-					class="bg-surface-container-lowest border-secondary-fixed rounded-xl border-t-4 p-8 md:col-span-1"
+					class="rounded-xl border-t-4 border-secondary-fixed bg-surface-container-lowest p-8 md:col-span-1"
 				>
 					<div class="mb-4 flex items-center justify-between">
-						<span class="font-label text-on-surface text-xs font-bold">Route Efficiency</span>
-						<span class="text-secondary material-symbols-outlined">trending_up</span>
+						<span class="font-label text-xs font-bold text-on-surface">Route Efficiency</span>
+						<span class="material-symbols-outlined text-secondary">trending_up</span>
 					</div>
 					<div class="space-y-3">
-						<div class="bg-surface-container h-1.5 w-full overflow-hidden rounded-full">
-							<div class="bg-secondary h-full w-[88%]"></div>
+						<div class="h-1.5 w-full overflow-hidden rounded-full bg-surface-container">
+							<div class="h-full w-[88%] bg-secondary"></div>
 						</div>
-						<div class="bg-surface-container h-1.5 w-full overflow-hidden rounded-full">
-							<div class="bg-primary h-full w-[62%]"></div>
+						<div class="h-1.5 w-full overflow-hidden rounded-full bg-surface-container">
+							<div class="h-full w-[62%] bg-primary"></div>
 						</div>
-						<div class="bg-surface-container h-1.5 w-full overflow-hidden rounded-full">
-							<div class="bg-outline-variant h-full w-[45%]"></div>
+						<div class="h-1.5 w-full overflow-hidden rounded-full bg-surface-container">
+							<div class="h-full w-[45%] bg-outline-variant"></div>
 						</div>
 					</div>
 				</div>
 				<!-- Wide Abstract Content -->
 				<div
-					class="bg-surface-container-lowest flex flex-col items-center gap-12 rounded-xl p-12 md:col-span-3 md:flex-row"
+					class="flex flex-col items-center gap-12 rounded-xl bg-surface-container-lowest p-12 md:col-span-3 md:flex-row"
 				>
 					<div class="flex-1">
-						<h3 class="font-headline text-on-surface mb-4 text-3xl italic">
+						<h3 class="mb-4 font-headline text-3xl text-on-surface italic">
 							The Geometry of Trade
 						</h3>
-						<p class="font-body text-on-surface-variant leading-relaxed">
+						<p class="font-body leading-relaxed text-on-surface-variant">
 							Our exploration uncovered that trade hubs act as gravitational centers within a larger
 							multi-dimensional space. By mapping these hubs as vertices in a dynamic graph, we can
 							visualize the "stress" placed on specific maritime corridors.
 						</p>
 					</div>
 					<div
-						class="bg-surface-container-low relative h-48 w-full flex-1 overflow-hidden rounded-lg"
+						class="relative h-48 w-full flex-1 overflow-hidden rounded-lg bg-surface-container-low"
 					>
 						<div
 							class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent opacity-20"
@@ -202,19 +201,19 @@
 	<!-- Key Insights Narrative -->
 	<section class="bg-surface px-12 py-32">
 		<div class="mx-auto max-w-3xl">
-			<h2 class="font-headline text-on-surface mb-12 text-center text-5xl italic">
+			<h2 class="mb-12 text-center font-headline text-5xl text-on-surface italic">
 				Synthesizing the Narrative
 			</h2>
-			<div class="font-body text-on-surface-variant space-y-10 text-xl leading-[1.8]">
+			<div class="space-y-10 font-body text-xl leading-[1.8] text-on-surface-variant">
 				<p>
 					The conclusion of our scholarly journey into trade rhythms is not found in a single chart,
 					but in the realization of
-					<span class="text-primary font-semibold italic">emergent stability</span>. While
+					<span class="font-semibold text-primary italic">emergent stability</span>. While
 					individual ships face chaotic weather and fluctuating demand, the system as a whole
 					exhibits a remarkable, self-correcting poise.
 				</p>
 				<blockquote
-					class="font-headline text-on-surface border-primary-fixed border-l-2 py-4 pl-8 text-2xl italic"
+					class="border-l-2 border-primary-fixed py-4 pl-8 font-headline text-2xl text-on-surface italic"
 				>
 					"Data is the ink with which we write the history of the present; the art lies in making
 					the ink legible to the soul."
@@ -228,19 +227,19 @@
 			</div>
 			<div class="mt-20 flex flex-wrap justify-center gap-3">
 				<span
-					class="bg-secondary-container text-on-secondary-container font-label rounded-md px-4 py-1.5 text-sm"
+					class="rounded-md bg-secondary-container px-4 py-1.5 font-label text-sm text-on-secondary-container"
 					>#Logistics</span
 				>
 				<span
-					class="bg-secondary-container text-on-secondary-container font-label rounded-md px-4 py-1.5 text-sm"
+					class="rounded-md bg-secondary-container px-4 py-1.5 font-label text-sm text-on-secondary-container"
 					>#DataArt</span
 				>
 				<span
-					class="bg-secondary-container text-on-secondary-container font-label rounded-md px-4 py-1.5 text-sm"
+					class="rounded-md bg-secondary-container px-4 py-1.5 font-label text-sm text-on-secondary-container"
 					>#SpectralAnalysis</span
 				>
 				<span
-					class="bg-secondary-container text-on-secondary-container font-label rounded-md px-4 py-1.5 text-sm"
+					class="rounded-md bg-secondary-container px-4 py-1.5 font-label text-sm text-on-secondary-container"
 					>#AcademicJournal</span
 				>
 			</div>
@@ -249,7 +248,7 @@
 
 	<!-- Atmospheric Divider -->
 	<div class="flex justify-center py-20">
-		<div class="bg-primary-fixed-dim h-px w-[100px]"></div>
+		<div class="h-px w-[100px] bg-primary-fixed-dim"></div>
 	</div>
 </main>
 

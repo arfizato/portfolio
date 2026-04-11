@@ -16,10 +16,9 @@
 </script>
 
 <nav
-	class="fixed top-0 left-1/2 z-50 flex w-full max-w-[1440px] -translate-x-1/2 items-center justify-between bg-white/40 px-12 py-6 backdrop-blur-xl"
+	class="fixed top-0 left-1/2 z-50 flex w-full -translate-x-1/2 items-center justify-between bg-white/40 px-12 py-6 backdrop-blur-xl"
 >
-	<a href="/" class="font-headline text-2xl tracking-tight text-slate-800 italic">Data Artistry</a
-	>
+	<a href="/" class="font-headline text-2xl tracking-tight text-slate-800 italic">Data Artistry</a>
 	<div class="hidden items-center gap-12 md:flex">
 		{#each links as link}
 			{@const isActive = link.key === activePage}
@@ -35,7 +34,7 @@
 	</div>
 	<a
 		href="#"
-		class="from-primary to-primary-dim text-on-primary font-label rounded-full bg-gradient-to-r px-8 py-2.5 text-sm tracking-widest uppercase transition-all hover:opacity-90 active:scale-95"
+		class="rounded-full bg-gradient-to-r from-primary to-primary-dim px-8 py-2.5 font-label text-sm tracking-widest text-on-primary uppercase transition-all hover:opacity-90 active:scale-95"
 	>
 		Hire Me
 	</a>

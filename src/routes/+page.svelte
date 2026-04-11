@@ -10,7 +10,7 @@
 	<!-- Hero Section -->
 	<section class="atmospheric-hero relative overflow-hidden px-12 pt-48 pb-32">
 		<div class="relative z-10 mx-auto flex max-w-6xl flex-col items-start gap-6">
-			<span class="font-label text-on-primary-container/80 text-sm uppercase tracking-widest"
+			<span class="font-label text-sm tracking-widest text-on-primary-container/80 uppercase"
 				>Analytical Explorer</span
 			>
 			<h1
@@ -18,7 +18,7 @@
 			>
 				Emna — <span class="font-normal opacity-80">Data Analyst in Amsterdam.</span>
 			</h1>
-			<p class="font-body text-on-primary-container/70 mt-4 max-w-xl text-xl leading-relaxed">
+			<p class="mt-4 max-w-xl font-body text-xl leading-relaxed text-on-primary-container/70">
 				Bridging the gap between complex algorithms and human intuition. Combining a
 				<strong>Bachelor in Computer Science</strong> with a
 				<strong>Master's in Big Data Analytics</strong> to uncover the narratives hidden in numbers.
@@ -31,7 +31,7 @@
 					<div>
 						<p class="font-serif text-2xl leading-none text-on-primary-container">BSc</p>
 						<p
-							class="font-label text-on-primary-container/60 text-[10px] uppercase tracking-tighter"
+							class="font-label text-[10px] tracking-tighter text-on-primary-container/60 uppercase"
 						>
 							Computer Science
 						</p>
@@ -44,7 +44,7 @@
 					<div>
 						<p class="font-serif text-2xl leading-none text-on-primary-container">MSc</p>
 						<p
-							class="font-label text-on-primary-container/60 text-[10px] uppercase tracking-tighter"
+							class="font-label text-[10px] tracking-tighter text-on-primary-container/60 uppercase"
 						>
 							Big Data Analytics
 						</p>
@@ -68,20 +68,20 @@
 				class="mb-16 flex flex-col items-start justify-between gap-8 px-4 md:flex-row md:items-end"
 			>
 				<div class="max-w-md">
-					<h2 class="text-on-surface mb-4 font-serif text-4xl">Latest Inquiries</h2>
-					<div class="bg-primary-fixed-dim h-[1px] w-24"></div>
+					<h2 class="mb-4 font-serif text-4xl text-on-surface">Latest Inquiries</h2>
+					<div class="h-[1px] w-24 bg-primary-fixed-dim"></div>
 				</div>
 				<div class="flex flex-wrap gap-4">
 					<span
-						class="bg-secondary-container text-on-secondary-container font-label rounded-md px-4 py-2 text-xs uppercase tracking-widest"
+						class="rounded-md bg-secondary-container px-4 py-2 font-label text-xs tracking-widest text-on-secondary-container uppercase"
 						>All Projects</span
 					>
 					<span
-						class="hover:bg-surface-container font-label cursor-pointer rounded-md px-4 py-2 text-xs uppercase tracking-widest transition-colors"
+						class="cursor-pointer rounded-md px-4 py-2 font-label text-xs tracking-widest uppercase transition-colors hover:bg-surface-container"
 						>ML Research</span
 					>
 					<span
-						class="hover:bg-surface-container font-label cursor-pointer rounded-md px-4 py-2 text-xs uppercase tracking-widest transition-colors"
+						class="cursor-pointer rounded-md px-4 py-2 font-label text-xs tracking-widest uppercase transition-colors hover:bg-surface-container"
 						>Visualizations</span
 					>
 				</div>
@@ -90,9 +90,9 @@
 			<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 				<!-- Project 1 -->
 				<article
-					class="journal-shadow bg-surface-container-lowest group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10"
+					class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"
 				>
-					<div class="bg-surface-variant relative aspect-[4/3] overflow-hidden">
+					<div class="relative aspect-[4/3] overflow-hidden bg-surface-variant">
 						<img
 							class="h-full w-full object-cover grayscale-[20%] transition-transform duration-700 group-hover:scale-105"
 							alt="Minimalist abstract data visualization with soft pink and blue nodes"
@@ -100,32 +100,32 @@
 						/>
 						<div class="absolute top-4 left-4">
 							<span
-								class="text-on-surface font-label rounded-full bg-white/90 px-3 py-1 text-[10px] uppercase tracking-widest backdrop-blur-sm"
+								class="rounded-full bg-white/90 px-3 py-1 font-label text-[10px] tracking-widest text-on-surface uppercase backdrop-blur-sm"
 								>March 14, 2024</span
 							>
 						</div>
 					</div>
 					<div class="flex flex-grow flex-col p-8">
 						<div class="mb-4 flex items-center gap-4">
-							<span class="text-primary font-label text-[10px] font-bold uppercase tracking-widest"
+							<span class="font-label text-[10px] font-bold tracking-widest text-primary uppercase"
 								>Acoustic Ecology</span
 							>
-							<span class="text-outline flex items-center gap-1 text-[10px]">
+							<span class="flex items-center gap-1 text-[10px] text-outline">
 								<span class="material-symbols-outlined text-[14px]">schedule</span> 12 min
 							</span>
 						</div>
 						<h3
-							class="text-on-surface group-hover:text-primary mb-4 font-serif text-2xl leading-snug transition-colors"
+							class="mb-4 font-serif text-2xl leading-snug text-on-surface transition-colors group-hover:text-primary"
 						>
 							The Geometry of Silence: Analysis of Ambient Noise
 						</h3>
-						<p class="font-body text-on-surface-variant mb-8 text-sm leading-relaxed">
+						<p class="mb-8 font-body text-sm leading-relaxed text-on-surface-variant">
 							A longitudinal study exploring frequency correlations with local biodiversity patterns
 							in metropolitan hubs.
 						</p>
 						<div class="mt-auto border-t border-outline-variant/10 pt-6">
 							<a
-								class="font-label text-primary flex items-center justify-between text-xs font-bold uppercase tracking-widest transition-transform hover:translate-x-2"
+								class="flex items-center justify-between font-label text-xs font-bold tracking-widest text-primary uppercase transition-transform hover:translate-x-2"
 								href="#"
 							>
 								Read Analysis
@@ -137,9 +137,9 @@
 
 				<!-- Project 2 -->
 				<article
-					class="journal-shadow bg-surface-container-lowest group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10"
+					class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"
 				>
-					<div class="bg-surface-variant relative aspect-[4/3] overflow-hidden">
+					<div class="relative aspect-[4/3] overflow-hidden bg-surface-variant">
 						<img
 							class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
 							alt="Scholarly journal with elegant typography next to a prism reflecting light"
@@ -147,32 +147,32 @@
 						/>
 						<div class="absolute top-4 left-4">
 							<span
-								class="text-on-surface font-label rounded-full bg-white/90 px-3 py-1 text-[10px] uppercase tracking-widest backdrop-blur-sm"
+								class="rounded-full bg-white/90 px-3 py-1 font-label text-[10px] tracking-widest text-on-surface uppercase backdrop-blur-sm"
 								>Feb 28, 2024</span
 							>
 						</div>
 					</div>
 					<div class="flex flex-grow flex-col p-8">
 						<div class="mb-4 flex items-center gap-4">
-							<span class="text-primary font-label text-[10px] font-bold uppercase tracking-widest"
+							<span class="font-label text-[10px] font-bold tracking-widest text-primary uppercase"
 								>NLP</span
 							>
-							<span class="text-outline flex items-center gap-1 text-[10px]">
+							<span class="flex items-center gap-1 text-[10px] text-outline">
 								<span class="material-symbols-outlined text-[14px]">schedule</span> 8 min
 							</span>
 						</div>
 						<h3
-							class="text-on-surface group-hover:text-primary mb-4 font-serif text-2xl leading-snug transition-colors"
+							class="mb-4 font-serif text-2xl leading-snug text-on-surface transition-colors group-hover:text-primary"
 						>
 							Linguistic Drift in Digital Correspondence
 						</h3>
-						<p class="font-body text-on-surface-variant mb-8 text-sm leading-relaxed">
-							Tracking the evolution of semantic meaning through five years of personal email archives
-							using NLP and LDA.
+						<p class="mb-8 font-body text-sm leading-relaxed text-on-surface-variant">
+							Tracking the evolution of semantic meaning through five years of personal email
+							archives using NLP and LDA.
 						</p>
 						<div class="mt-auto border-t border-outline-variant/10 pt-6">
 							<a
-								class="font-label text-primary flex items-center justify-between text-xs font-bold uppercase tracking-widest transition-transform hover:translate-x-2"
+								class="flex items-center justify-between font-label text-xs font-bold tracking-widest text-primary uppercase transition-transform hover:translate-x-2"
 								href="#"
 							>
 								View Repository
@@ -184,9 +184,9 @@
 
 				<!-- Project 3 -->
 				<article
-					class="journal-shadow bg-surface-container-lowest group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10"
+					class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"
 				>
-					<div class="bg-surface-variant relative aspect-[4/3] overflow-hidden">
+					<div class="relative aspect-[4/3] overflow-hidden bg-surface-variant">
 						<img
 							class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
 							alt="Delicate watercolor style scatter plot with soft pastel points"
@@ -194,32 +194,32 @@
 						/>
 						<div class="absolute top-4 left-4">
 							<span
-								class="text-on-surface font-label rounded-full bg-white/90 px-3 py-1 text-[10px] uppercase tracking-widest backdrop-blur-sm"
+								class="rounded-full bg-white/90 px-3 py-1 font-label text-[10px] tracking-widest text-on-surface uppercase backdrop-blur-sm"
 								>Jan 12, 2024</span
 							>
 						</div>
 					</div>
 					<div class="flex flex-grow flex-col p-8">
 						<div class="mb-4 flex items-center gap-4">
-							<span class="text-primary font-label text-[10px] font-bold uppercase tracking-widest"
+							<span class="font-label text-[10px] font-bold tracking-widest text-primary uppercase"
 								>Complexity Theory</span
 							>
-							<span class="text-outline flex items-center gap-1 text-[10px]">
+							<span class="flex items-center gap-1 text-[10px] text-outline">
 								<span class="material-symbols-outlined text-[14px]">schedule</span> 15 min
 							</span>
 						</div>
 						<h3
-							class="text-on-surface group-hover:text-primary mb-4 font-serif text-2xl leading-snug transition-colors"
+							class="mb-4 font-serif text-2xl leading-snug text-on-surface transition-colors group-hover:text-primary"
 						>
 							Fractal Patterns in Financial Volatility
 						</h3>
-						<p class="font-body text-on-surface-variant mb-8 text-sm leading-relaxed">
+						<p class="mb-8 font-body text-sm leading-relaxed text-on-surface-variant">
 							Exploring why market movements mimic the branching of trees more than the rolling of
 							dice in chaotic systems.
 						</p>
 						<div class="mt-auto border-t border-outline-variant/10 pt-6">
 							<a
-								class="font-label text-primary flex items-center justify-between text-xs font-bold uppercase tracking-widest transition-transform hover:translate-x-2"
+								class="flex items-center justify-between font-label text-xs font-bold tracking-widest text-primary uppercase transition-transform hover:translate-x-2"
 								href="#"
 							>
 								Full Dataset
@@ -232,7 +232,7 @@
 
 			<div class="mt-24 flex justify-center">
 				<button
-					class="text-on-surface hover:text-primary group flex items-center gap-4 font-serif text-2xl italic transition-colors"
+					class="group flex items-center gap-4 font-serif text-2xl text-on-surface italic transition-colors hover:text-primary"
 				>
 					Enter the Archives
 					<span class="material-symbols-outlined transition-transform group-hover:translate-x-2"
@@ -244,21 +244,21 @@
 	</section>
 
 	<!-- Signature Quote -->
-	<section class="bg-surface-container-low relative overflow-hidden py-40 text-center">
+	<section class="relative overflow-hidden bg-surface-container-low py-40 text-center">
 		<div class="relative z-10 mx-auto max-w-3xl px-12">
-			<span class="material-symbols-outlined text-primary-fixed mb-8 text-6xl opacity-30"
+			<span class="material-symbols-outlined mb-8 text-6xl text-primary-fixed opacity-30"
 				>format_quote</span
 			>
-			<blockquote class="text-on-surface mb-12 font-serif text-4xl leading-relaxed italic">
+			<blockquote class="mb-12 font-serif text-4xl leading-relaxed text-on-surface italic">
 				"Data is not just information; it is the visible ripple on the surface of an invisible sea
 				of causality."
 			</blockquote>
-			<cite class="font-label text-outline text-xs uppercase tracking-[0.2em]"
+			<cite class="font-label text-xs tracking-[0.2em] text-outline uppercase"
 				>Editorial Note &#8470; 001</cite
 			>
 		</div>
 		<div
-			class="bg-primary-fixed-dim absolute bottom-0 left-1/2 h-[1px] w-[100px] -translate-x-1/2"
+			class="absolute bottom-0 left-1/2 h-[1px] w-[100px] -translate-x-1/2 bg-primary-fixed-dim"
 		></div>
 	</section>
 </main>
