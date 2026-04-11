@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Emna | Data Analyst</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed-dim": "#ffc4e0",
+                        "surface-bright": "#f8f9fc",
+                        "error": "#ac3434",
+                        "surface-container": "#ebeef2",
+                        "primary-fixed": "#a1c2ff",
+                        "inverse-surface": "#0c0f11",
+                        "surface": "#f8f9fc",
+                        "primary-fixed-dim": "#92b4f4",
+                        "surface-variant": "#dee3e8",
+                        "on-primary": "#f8f8ff",
+                        "inverse-on-surface": "#9b9da0",
+                        "secondary-dim": "#8b3168",
+                        "on-primary-fixed": "#002755",
+                        "tertiary-fixed": "#55f3e9",
+                        "tertiary": "#006b66",
+                        "on-tertiary-fixed": "#004440",
+                        "error-container": "#f56965",
+                        "surface-container-low": "#f2f4f7",
+                        "on-tertiary-fixed-variant": "#00635e",
+                        "secondary-fixed": "#ffd8e9",
+                        "outline-variant": "#adb2b8",
+                        "primary": "#3c5f99",
+                        "tertiary-dim": "#005e59",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#d5dbe1",
+                        "tertiary-fixed-dim": "#41e5db",
+                        "primary-container": "#a1c2ff",
+                        "on-surface-variant": "#5a6064",
+                        "on-surface": "#2e3337",
+                        "on-primary-container": "#123c74",
+                        "on-error-container": "#65000b",
+                        "background": "#f8f9fc",
+                        "primary-dim": "#2f538c",
+                        "on-secondary-container": "#892f67",
+                        "secondary": "#993d75",
+                        "outline": "#767b80",
+                        "surface-tint": "#3c5f99",
+                        "surface-container-high": "#e5e8ed",
+                        "tertiary-container": "#55f3e9",
+                        "surface-container-highest": "#dee3e8",
+                        "error-dim": "#70030f",
+                        "on-tertiary": "#e1fffb",
+                        "on-background": "#2e3337",
+                        "secondary-container": "#ffd8e9",
+                        "inverse-primary": "#94b7f7",
+                        "on-error": "#fff7f6",
+                        "on-secondary": "#fff7f8",
+                        "on-secondary-fixed": "#721b53",
+                        "on-tertiary-container": "#005854",
+                        "on-primary-fixed-variant": "#1e457d",
+                        "on-secondary-fixed-variant": "#953971"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f8f9fc; color: #2e3337; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .glass-nav { backdrop-filter: blur(24px); }
+        .atmospheric-hero { background: linear-gradient(135deg, #a1c2ff 0%, #ffd8e9 100%); }
+        .journal-shadow { box-shadow: 0 12px 40px rgba(46, 51, 55, 0.06); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/40 dark:bg-slate-900/40 backdrop-blur-xl flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto w-full">
+<div class="font-serif text-2xl tracking-tight text-slate-800 dark:text-slate-100">Data Artistry</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-blue-700 dark:text-blue-300 border-b-2 border-blue-600/30 font-bold font-serif newsreader italic text-lg transition-opacity duration-300 hover:opacity-80" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 font-serif newsreader italic text-lg transition-opacity duration-300 hover:opacity-80" href="#">Portfolio</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 font-serif newsreader italic text-lg transition-opacity duration-300 hover:opacity-80" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-500 font-serif newsreader italic text-lg transition-opacity duration-300 hover:opacity-80" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-label text-sm tracking-wide transition-opacity duration-300 hover:opacity-80 active:scale-95">Hire Me</button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="atmospheric-hero pt-48 pb-32 px-12 relative overflow-hidden">
+<div class="max-w-6xl mx-auto flex flex-col items-start gap-6 relative z-10">
+<span class="font-label text-sm uppercase tracking-widest text-on-primary-container/80">Analytical Explorer</span>
+<h1 class="font-serif italic text-6xl md:text-8xl text-on-primary-container leading-tight max-w-4xl">
+                    Emna — <span class="font-normal opacity-80">Data Analyst in Amsterdam.</span>
+</h1>
+<p class="font-body text-xl text-on-primary-container/70 max-w-xl leading-relaxed mt-4">
+                    Bridging the gap between complex algorithms and human intuition. Combining a <strong>Bachelor in Computer Science</strong> with a <strong>Master's in Big Data Analytics</strong> to uncover the narratives hidden in numbers.
+                </p>
+<div class="mt-8 flex gap-4">
+<div class="bg-white/20 backdrop-blur-md px-6 py-4 rounded-xl journal-shadow flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+<div>
+<p class="font-serif text-2xl text-on-primary-container leading-none">BSc</p>
+<p class="font-label text-[10px] uppercase tracking-tighter text-on-primary-container/60">Computer Science</p>
+</div>
+</div>
+<div class="bg-white/20 backdrop-blur-md px-6 py-4 rounded-xl journal-shadow flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary" data-icon="workspace_premium">workspace_premium</span>
+<div>
+<p class="font-serif text-2xl text-on-primary-container leading-none">MSc</p>
+<p class="font-label text-[10px] uppercase tracking-tighter text-on-primary-container/60">Big Data Analytics</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Cloud Decorations -->
+<div class="absolute top-1/4 right-[-10%] w-[600px] h-[600px] bg-white/30 rounded-full blur-[100px]"></div>
+<div class="absolute bottom-[-20%] left-[10%] w-[500px] h-[500px] bg-secondary-container/40 rounded-full blur-[120px]"></div>
+</section>
+<!-- Projects Grid (Updated to clean, scholarly grid) -->
+<section class="py-24 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8 px-4">
+<div class="max-w-md">
+<h2 class="font-serif text-4xl text-on-surface mb-4">Latest Inquiries</h2>
+<div class="w-24 h-[1px] bg-primary-fixed-dim"></div>
+</div>
+<div class="flex flex-wrap gap-4">
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-md font-label text-xs uppercase tracking-widest">All Projects</span>
+<span class="px-4 py-2 hover:bg-surface-container transition-colors rounded-md font-label text-xs uppercase tracking-widest cursor-pointer">ML Research</span>
+<span class="px-4 py-2 hover:bg-surface-container transition-colors rounded-md font-label text-xs uppercase tracking-widest cursor-pointer">Visualizations</span>
+</div>
+</div>
+<!-- Clean Scholarly Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden journal-shadow border border-outline-variant/10 flex flex-col">
+<div class="aspect-[4/3] bg-surface-variant relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700" data-alt="minimalist abstract data visualization with soft pink and blue nodes connected by ethereal lines on a white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9tAIep-xRYYA0q8UW_NVV-lvhFA41expkHmrrvQ63iX7ytYqQ_zsQt5mjGpv3qVkO1cOL9Wk3gq9XpbyKRlcJwQzmOXiuAnyxkDqC0Zm75cPQRLVkXaUqnwJIk18w3kPA97uaNYnfmk4WahOFVVxmvmWKtdudOdHcWbhwlwwiM1kqxCyk5Ybd-VHygQgQtgh2KMBbvt0J-H6FyGMyjN7-4nNHAhROBMsR3KS9dWfyW1ECVm7QX2X2xFUJja-7u6KyWlvjP0ZhAnk"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-label text-[10px] uppercase tracking-widest text-on-surface">March 14, 2024</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<span class="text-primary text-[10px] uppercase tracking-widest font-bold font-label">Acoustic Ecology</span>
+<span class="text-outline text-[10px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="schedule">schedule</span> 12 min
+                                </span>
+</div>
+<h3 class="font-serif text-2xl text-on-surface group-hover:text-primary transition-colors mb-4 leading-snug">The Geometry of Silence: Analysis of Ambient Noise</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-8">
+                                A longitudinal study exploring frequency correlations with local biodiversity patterns in metropolitan hubs.
+                            </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<a class="font-label text-xs uppercase tracking-widest text-primary font-bold flex items-center justify-between hover:translate-x-2 transition-transform" href="#">
+                                    Read Analysis <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden journal-shadow border border-outline-variant/10 flex flex-col">
+<div class="aspect-[4/3] bg-surface-variant relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="clean top-down photography of a scholarly journal with elegant typography next to a small prism reflecting light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkdTJy6JJxIYLF_SEoVJg24958yWijgYep9fp1fSfyChiVIkchDK3G8w4qGSQ-ipT4dUXUWeKbKCziABT5E_rhUtkaDzvnPAhylASkTqPaXwYrzwJleBTSAJ-RAsmf5taRVv2rklERJPrlnwSxcTzPvHnJ-pc0xYlsaH9bP-zOjlug0NRAwEiqmwVAh1b_yL4nHxf3LNjV1lMUHZtzhbUQD0SkgFfO2mOg87BbUnMxgHkWyBwjfJ6Me7nUQl4i-IQKTdFO40yzIXw"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-label text-[10px] uppercase tracking-widest text-on-surface">Feb 28, 2024</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<span class="text-primary text-[10px] uppercase tracking-widest font-bold font-label">NLP</span>
+<span class="text-outline text-[10px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="schedule">schedule</span> 8 min
+                                </span>
+</div>
+<h3 class="font-serif text-2xl text-on-surface group-hover:text-primary transition-colors mb-4 leading-snug">Linguistic Drift in Digital Correspondence</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-8">
+                                Tracking the evolution of semantic meaning through five years of personal email archives using NLP and LDA.
+                            </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<a class="font-label text-xs uppercase tracking-widest text-primary font-bold flex items-center justify-between hover:translate-x-2 transition-transform" href="#">
+                                    View Repository <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="group bg-surface-container-lowest rounded-xl overflow-hidden journal-shadow border border-outline-variant/10 flex flex-col">
+<div class="aspect-[4/3] bg-surface-variant relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="delicate watercolor style scatter plot with soft pastel points and charcoal axis lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwfDv92j92Ll_Xkrhs-6neckDVzBGytjDFLX3PBOch1Rj5a0Lt1MxtKhcKVT3xOb1ZAzsSdEMyrh6FaNd2tAjcIZcqZXww8BwUbv0I0QN0ZbOWUXEeWZzHhVXhh7ig96tu8NBkJhtPxA30V6u44Tx2_W29y0dT7p3a5_e1Xr545871yhH6ciS7AOSJEBRc5QEoHFDHWJgmn8C_aYRzKOHSU1S_1dWbDwX5IOuwG7AbI40Hky_blvZlr9e5Z2H0W63KJsRAjPhFE0U"/>
+<div class="absolute top-4 left-4">
+<span class="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-label text-[10px] uppercase tracking-widest text-on-surface">Jan 12, 2024</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<div class="flex items-center gap-4 mb-4">
+<span class="text-primary text-[10px] uppercase tracking-widest font-bold font-label">Complexity Theory</span>
+<span class="text-outline text-[10px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]" data-icon="schedule">schedule</span> 15 min
+                                </span>
+</div>
+<h3 class="font-serif text-2xl text-on-surface group-hover:text-primary transition-colors mb-4 leading-snug">Fractal Patterns in Financial Volatility</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed mb-8">
+                                Exploring why market movements mimic the branching of trees more than the rolling of dice in chaotic systems.
+                            </p>
+<div class="mt-auto pt-6 border-t border-outline-variant/10">
+<a class="font-label text-xs uppercase tracking-widest text-primary font-bold flex items-center justify-between hover:translate-x-2 transition-transform" href="#">
+                                    Full Dataset <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-24 flex justify-center">
+<button class="font-serif italic text-2xl text-on-surface hover:text-primary transition-colors flex items-center gap-4 group">
+                        Enter the Archives
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform" data-icon="east">east</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Signature Quote -->
+<section class="py-40 bg-surface-container-low text-center overflow-hidden relative">
+<div class="max-w-3xl mx-auto px-12 relative z-10">
+<span class="material-symbols-outlined text-6xl text-primary-fixed opacity-30 mb-8" data-icon="format_quote">format_quote</span>
+<blockquote class="font-serif italic text-4xl text-on-surface leading-relaxed mb-12">
+                    "Data is not just information; it is the visible ripple on the surface of an invisible sea of causality."
+                </blockquote>
+<cite class="font-label text-xs uppercase tracking-[0.2em] text-outline">Editorial Note № 001</cite>
+</div>
+<!-- Atmospheric divider logic -->
+<div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[100px] h-[1px] bg-primary-fixed-dim"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 px-12 bg-slate-50 dark:bg-slate-950 flex flex-col md:flex-row justify-between items-center gap-8 max-w-[1440px] mx-auto w-full">
+<div class="text-lg font-serif italic text-slate-700">Emna — Data Analyst</div>
+<p class="font-sans manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-500">© 2024 Emna. Portfolio built with analytical precision.</p>
+<div class="flex gap-8">
+<a class="font-sans manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-500 hover:text-blue-500 transition-colors duration-500" href="#">LinkedIn</a>
+<a class="font-sans manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-500 hover:text-blue-500 transition-colors duration-500" href="#">GitHub</a>
+<a class="font-sans manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-500 hover:text-blue-500 transition-colors duration-500" href="#">Medium</a>
+<a class="font-sans manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-500 hover:text-blue-500 transition-colors duration-500" href="#">Kaggle</a>
+</div>
+</footer>
+</body></html>
