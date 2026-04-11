@@ -1,3 +1,17 @@
+# TODO
+
+- favicon
+- contact page?
+- data format?
+- upload data to some DB/CDN or put everything in the repo as JSONs?
+- layout
+  - navbar
+  - which footer do we want (extended or compact)
+  - put projects/entries in footer
+- landing page
+  - add filter feature
+- /technical page is not responsive + out of sync with other pages
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
