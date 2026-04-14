@@ -7,10 +7,15 @@
 	let activeFilter = $state<Filter>('all');
 	let displayedProjects = $state(projects);
 	let pendingTimeout: ReturnType<typeof setTimeout> | undefined;
+	let heightTimeout: ReturnType<typeof setTimeout> | undefined;
+	let gridEl: HTMLDivElement;
 
 	function setFilter(filter: Filter) {
 		clearTimeout(pendingTimeout);
+		clearTimeout(heightTimeout);
 		activeFilter = filter;
+
+		if (gridEl) gridEl.style.minHeight = `${gridEl.offsetHeight}px`;
 
 		const target = filter === 'all' ? projects : projects.filter((p) => p.category === filter);
 		const targetSlugs = new Set(target.map((p) => p.slug));
@@ -24,8 +29,14 @@
 			pendingTimeout = setTimeout(() => {
 				displayedProjects = target;
 			}, 250);
+			heightTimeout = setTimeout(() => {
+				if (gridEl) gridEl.style.minHeight = '';
+			}, 600);
 		} else {
 			displayedProjects = target;
+			heightTimeout = setTimeout(() => {
+				if (gridEl) gridEl.style.minHeight = '';
+			}, 350);
 		}
 	}
 
@@ -120,7 +131,7 @@
 				</div>
 			</div>
 			<!-- Project Cards Grid -->
-			<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+			<div bind:this={gridEl} class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 				{#each displayedProjects as project (project.slug)}
 					<article
 						class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"

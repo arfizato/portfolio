@@ -8,10 +8,15 @@
 	let activeFilter = $state<Filter>('all');
 	let displayedProjects = $state(projects);
 	let pendingTimeout: ReturnType<typeof setTimeout> | undefined;
+	let heightTimeout: ReturnType<typeof setTimeout> | undefined;
+	let listEl: HTMLDivElement;
 
 	function setFilter(filter: Filter) {
 		clearTimeout(pendingTimeout);
+		clearTimeout(heightTimeout);
 		activeFilter = filter;
+
+		if (listEl) listEl.style.minHeight = `${listEl.offsetHeight}px`;
 
 		const target = filter === 'all' ? projects : projects.filter((p) => p.category === filter);
 		const targetSlugs = new Set(target.map((p) => p.slug));
@@ -25,8 +30,14 @@
 			pendingTimeout = setTimeout(() => {
 				displayedProjects = target;
 			}, 250);
+			heightTimeout = setTimeout(() => {
+				if (listEl) listEl.style.minHeight = '';
+			}, 600);
 		} else {
 			displayedProjects = target;
+			heightTimeout = setTimeout(() => {
+				if (listEl) listEl.style.minHeight = '';
+			}, 350);
 		}
 	}
 
@@ -100,7 +111,7 @@
 
 	<!-- Entry List -->
 	<div class="mx-auto max-w-5xl">
-		<div class="flex flex-col gap-12">
+		<div bind:this={listEl} class="flex flex-col gap-12">
 			{#each displayedProjects as project (project.slug)}
 				{@const cat = categoryClasses[project.category]}
 				<article
