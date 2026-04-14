@@ -1,6 +1,39 @@
 <script lang="ts">
+	import { fade, fly } from 'svelte/transition';
 	import Footer from '$lib/components/Footer.svelte';
 	import { projects } from '$lib/data/projects';
+
+	type Filter = 'all' | 'scholarly' | 'technical';
+	let activeFilter = $state<Filter>('all');
+	let displayedProjects = $state(projects);
+	let pendingTimeout: ReturnType<typeof setTimeout> | undefined;
+
+	function setFilter(filter: Filter) {
+		clearTimeout(pendingTimeout);
+		activeFilter = filter;
+
+		const target = filter === 'all' ? projects : projects.filter((p) => p.category === filter);
+		const targetSlugs = new Set(target.map((p) => p.slug));
+		const currentSlugs = new Set(displayedProjects.map((p) => p.slug));
+
+		const hasRemovals = displayedProjects.some((p) => !targetSlugs.has(p.slug));
+		const hasAdditions = target.some((p) => !currentSlugs.has(p.slug));
+
+		if (hasRemovals && hasAdditions) {
+			displayedProjects = displayedProjects.filter((p) => targetSlugs.has(p.slug));
+			pendingTimeout = setTimeout(() => {
+				displayedProjects = target;
+			}, 250);
+		} else {
+			displayedProjects = target;
+		}
+	}
+
+	const filters: { key: Filter; label: string }[] = [
+		{ key: 'all', label: 'All Projects' },
+		{ key: 'scholarly', label: 'Scholarly' },
+		{ key: 'technical', label: 'Technical' }
+	];
 </script>
 
 <svelte:head>
@@ -73,25 +106,26 @@
 					<div class="h-[1px] w-24 bg-primary-fixed-dim"></div>
 				</div>
 				<div class="flex flex-wrap gap-4">
-					<span
-						class="rounded-md bg-secondary-container px-4 py-2 font-label text-xs tracking-widest text-on-secondary-container uppercase"
-						>All Projects</span
-					>
-					<span
-						class="cursor-pointer rounded-md px-4 py-2 font-label text-xs tracking-widest uppercase transition-colors hover:bg-surface-container"
-						>ML Research</span
-					>
-					<span
-						class="cursor-pointer rounded-md px-4 py-2 font-label text-xs tracking-widest uppercase transition-colors hover:bg-surface-container"
-						>Visualizations</span
-					>
+					{#each filters as filter}
+						{@const isActive = activeFilter === filter.key}
+						<button
+							class="rounded-md px-4 py-2 font-label text-xs tracking-widest uppercase transition-colors {isActive
+								? 'bg-secondary-container text-on-secondary-container'
+								: 'cursor-pointer hover:bg-surface-container'}"
+							onclick={() => setFilter(filter.key)}
+						>
+							{filter.label}
+						</button>
+					{/each}
 				</div>
 			</div>
 			<!-- Project Cards Grid -->
 			<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-				{#each projects as project}
+				{#each displayedProjects as project (project.slug)}
 					<article
 						class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"
+						in:fly={{ y: 20, duration: 300 }}
+						out:fade={{ duration: 200 }}
 					>
 						<div class="relative aspect-[4/3] overflow-hidden bg-surface-variant">
 							<img
