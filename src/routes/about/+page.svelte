@@ -64,10 +64,10 @@
 		{#each timeline as chapter, i}
 			{@const colors = colorClasses[chapter.color]}
 			{@const aspect = aspectClasses[chapter.image.aspect]}
-			{@const imageLeft = i % 2 === 0}
+			{@const imageLeft = i % 2 !== 0}
 			<div class="relative mb-40 grid grid-cols-1 items-center gap-16 lg:grid-cols-2 lg:gap-32">
 				<!-- Image -->
-				<div class={imageLeft ? 'order-2 lg:order-1' : ''}>
+				<div class={imageLeft ? 'order-2 lg:order-1' : 'lg:order-2'}>
 					<div class="group relative {aspect} overflow-hidden rounded-2xl shadow-2xl">
 						<img
 							class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
