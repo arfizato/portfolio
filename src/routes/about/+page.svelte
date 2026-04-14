@@ -39,7 +39,7 @@
 
 <main class="overflow-hidden pt-32">
 	<!-- Story Hero -->
-	<section class="mx-auto mb-32 max-w-[1440px] px-12">
+	<section class="mb-32 max-w-[1440px] px-12">
 		<div class="max-w-4xl">
 			<span class="mb-4 block font-label text-xs font-bold tracking-widest text-primary uppercase"
 				>The Narrative</span
@@ -78,9 +78,7 @@
 					</div>
 				</div>
 				<!-- Text -->
-				<div
-					class="relative {imageLeft ? 'order-1 lg:order-2 lg:pl-12' : 'text-right lg:pr-12'}"
-				>
+				<div class="relative {imageLeft ? 'order-1 lg:order-2 lg:pl-12' : 'text-right lg:pr-12'}">
 					<div
 						class="absolute top-8 {imageLeft
 							? '-left-[calc(16rem+1px)]'
@@ -99,9 +97,7 @@
 					<div class="flex {imageLeft ? '' : 'justify-end'} gap-4">
 						{#if imageLeft}
 							<div class="rounded-lg {colors.container} p-3">
-								<span class="material-symbols-outlined {colors.text}"
-									>{chapter.detail.icon}</span
-								>
+								<span class="material-symbols-outlined {colors.text}">{chapter.detail.icon}</span>
 							</div>
 							<div>
 								<p class="text-sm font-bold">{chapter.detail.label}</p>
@@ -117,9 +113,7 @@
 								</p>
 							</div>
 							<div class="rounded-lg {colors.container} p-3">
-								<span class="material-symbols-outlined {colors.text}"
-									>{chapter.detail.icon}</span
-								>
+								<span class="material-symbols-outlined {colors.text}">{chapter.detail.icon}</span>
 							</div>
 						{/if}
 					</div>

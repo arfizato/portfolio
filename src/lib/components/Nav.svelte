@@ -9,9 +9,9 @@
 
 	const links: NavLink[] = [
 		{ label: 'Home', href: '/', key: 'home' },
-		{ label: 'Entries', href: '/journal', key: 'entries' },
+		{ label: 'Entries', href: '/entries', key: 'entries' },
 		{ label: 'About', href: '/about', key: 'about' },
-		{ label: 'Contact', href: '#', key: 'contact' }
+		{ label: 'Contact', href: '/contact', key: 'contact' }
 	];
 </script>
 

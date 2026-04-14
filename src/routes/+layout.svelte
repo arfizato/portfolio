@@ -10,7 +10,9 @@
 		'/': 'home',
 		'/journal': 'entries',
 		'/technical': 'entries',
-		'/about': 'about'
+		'/entries': 'entries',
+		'/about': 'about',
+		'/contact': 'contact'
 	};
 
 	let activePage = $derived(routeToPage[page.url.pathname] ?? 'home');

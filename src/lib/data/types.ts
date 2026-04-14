@@ -10,6 +10,7 @@ export interface Project {
 	date: string;
 	tags: string[];
 	readTime: string;
+	category: 'scholarly' | 'technical';
 	image: { src: string; alt: string };
 	cta: string;
 }

@@ -10,7 +10,7 @@
 <main>
 	<!-- Hero Section -->
 	<section class="atmospheric-hero relative overflow-hidden px-12 pt-48 pb-32">
-		<div class="relative z-10 mx-auto flex max-w-6xl flex-col items-start gap-6">
+		<div class="smx-auto relative z-10 flex max-w-[1440px] flex-col items-start gap-6">
 			<span class="font-label text-sm tracking-widest text-on-primary-container/80 uppercase"
 				>Analytical Explorer</span
 			>
@@ -64,7 +64,7 @@
 
 	<!-- Projects Grid -->
 	<section class="bg-surface px-12 py-24">
-		<div class="mx-auto max-w-7xl">
+		<div class="mx-auto max-w-[1440px]">
 			<div
 				class="mb-16 flex flex-col items-start justify-between gap-8 px-4 md:flex-row md:items-end"
 			>
@@ -153,8 +153,8 @@
 	</section>
 
 	<!-- Signature Quote -->
-	<section class="relative overflow-hidden bg-surface-container-low py-40 text-center">
-		<div class="relative z-10 mx-auto max-w-3xl px-12">
+	<section class="relative overflow-hidden bg-surface-container-low px-12 py-40 text-center">
+		<div class="relative z-10 mx-auto max-w-3xl">
 			<span class="material-symbols-outlined mb-8 text-6xl text-primary-fixed opacity-30"
 				>format_quote</span
 			>

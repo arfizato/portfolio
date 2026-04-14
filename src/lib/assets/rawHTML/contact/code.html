@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact — Data Artistry</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#004440",
+                        "error-dim": "#70030f",
+                        "inverse-primary": "#94b7f7",
+                        "error-container": "#f56965",
+                        "on-secondary": "#fff7f8",
+                        "tertiary-fixed-dim": "#41e5db",
+                        "primary": "#3c5f99",
+                        "surface-dim": "#d5dbe1",
+                        "on-surface-variant": "#5a6064",
+                        "surface-container-low": "#f2f4f7",
+                        "tertiary-container": "#55f3e9",
+                        "primary-fixed-dim": "#92b4f4",
+                        "secondary-container": "#ffd8e9",
+                        "outline-variant": "#adb2b8",
+                        "on-surface": "#2e3337",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#1e457d",
+                        "inverse-on-surface": "#9b9da0",
+                        "secondary-fixed": "#ffd8e9",
+                        "secondary": "#993d75",
+                        "on-primary": "#f8f8ff",
+                        "inverse-surface": "#0c0f11",
+                        "primary-container": "#a1c2ff",
+                        "surface": "#f8f9fc",
+                        "outline": "#767b80",
+                        "on-primary-container": "#123c74",
+                        "tertiary-fixed": "#55f3e9",
+                        "tertiary-dim": "#005e59",
+                        "on-primary-fixed": "#002755",
+                        "surface-tint": "#3c5f99",
+                        "tertiary": "#006b66",
+                        "on-secondary-fixed-variant": "#953971",
+                        "on-secondary-container": "#892f67",
+                        "surface-bright": "#f8f9fc",
+                        "on-tertiary-fixed-variant": "#00635e",
+                        "surface-container": "#ebeef2",
+                        "on-tertiary": "#e1fffb",
+                        "primary-dim": "#2f538c",
+                        "secondary-dim": "#8b3168",
+                        "primary-fixed": "#a1c2ff",
+                        "on-secondary-fixed": "#721b53",
+                        "surface-container-high": "#e5e8ed",
+                        "on-background": "#2e3337",
+                        "on-error": "#fff7f6",
+                        "error": "#ac3434",
+                        "on-tertiary-container": "#005854",
+                        "on-error-container": "#65000b",
+                        "surface-variant": "#dee3e8",
+                        "background": "#f8f9fc",
+                        "surface-container-highest": "#dee3e8",
+                        "secondary-fixed-dim": "#ffc4e0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f8f9fc;
+        }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ethereal-gradient {
+            background: linear-gradient(135deg, #a1c2ff 0%, #ffd8e9 100%);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="w-full sticky top-0 z-50 bg-slate-50/40 backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<span class="font-serif italic text-2xl text-slate-800">Data Artistry</span>
+<div class="hidden md:flex items-center gap-8 font-serif text-newsreader text-lg">
+<a class="text-slate-600 hover:text-blue-500 transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-600 hover:text-blue-500 transition-colors duration-300" href="#">Entries</a>
+<a class="text-slate-600 hover:text-blue-500 transition-colors duration-300" href="#">About</a>
+<a class="text-blue-700 border-b-2 border-blue-600/30 pb-1" href="#">Contact</a>
+</div>
+<button class="text-blue-700 transition-transform duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="min-h-screen relative overflow-hidden">
+<!-- Atmospheric Background Elements -->
+<div class="absolute top-0 left-0 w-full h-[614px] ethereal-gradient opacity-20 -z-10 blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary-container opacity-30 rounded-full blur-3xl -z-10"></div>
+<div class="max-w-6xl mx-auto px-6 py-20 lg:py-32">
+<!-- Header Section -->
+<header class="mb-20 text-center md:text-left max-w-2xl">
+<h1 class="font-serif text-6xl md:text-7xl lg:text-8xl text-on-surface mb-6 tracking-tight">Reach Out</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed">
+                    A collaborative space where inquiry meets data. Whether you have a scholarly inquiry or a creative vision, I invite you to share your thoughts.
+                </p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Contact Form Section -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_12px_40px_rgba(46,51,55,0.06)] relative overflow-hidden">
+<!-- Subtle decorative gradient -->
+<div class="absolute top-0 right-0 w-32 h-32 ethereal-gradient opacity-5 rounded-bl-full"></div>
+<form class="space-y-8 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-body text-sm font-semibold text-on-surface uppercase tracking-widest opacity-70" for="name">Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest transition-all duration-300 outline-none text-on-surface placeholder:opacity-30" id="name" placeholder="Emilia Noels" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-body text-sm font-semibold text-on-surface uppercase tracking-widest opacity-70" for="email">Email</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest transition-all duration-300 outline-none text-on-surface placeholder:opacity-30" id="email" placeholder="hello@dataartistry.edu" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-body text-sm font-semibold text-on-surface uppercase tracking-widest opacity-70" for="message">Message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-lg p-4 focus:ring-2 focus:ring-primary-container focus:bg-surface-container-lowest transition-all duration-300 outline-none text-on-surface placeholder:opacity-30 resize-none" id="message" placeholder="Share your inquiry or data narrative..." rows="6"></textarea>
+</div>
+<button class="w-full md:w-auto px-10 py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary rounded-full font-body font-bold text-sm tracking-widest uppercase hover:shadow-xl hover:shadow-primary/20 transition-all duration-300 transform active:scale-95" type="submit">
+                                Send Inquiry
+                            </button>
+</form>
+</div>
+</div>
+<!-- Sidebar / Other Ways to Connect -->
+<aside class="lg:col-span-5 space-y-12 lg:pl-12">
+<section>
+<h3 class="font-serif text-3xl text-on-surface mb-8">Other Ways to Connect</h3>
+<div class="space-y-6">
+<div class="group flex items-center gap-6 p-4 rounded-xl hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 rounded-full flex items-center justify-center bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Inquiries</p>
+<p class="font-body text-lg text-on-surface">emna@datajournal.io</p>
+</div>
+</div>
+<div class="group flex items-center gap-6 p-4 rounded-xl hover:bg-surface-container-low transition-all duration-300">
+<div class="w-12 h-12 rounded-full flex items-center justify-center bg-primary-container text-on-primary-container">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold">Studio</p>
+<p class="font-body text-lg text-on-surface">Stockholm, Sweden</p>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-6">
+<h4 class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-bold px-4">Scholarly Networks</h4>
+<div class="grid grid-cols-1 gap-4">
+<a class="group flex items-center justify-between p-4 bg-surface-container-low rounded-xl hover:bg-primary-container/20 transition-all duration-300" href="#">
+<span class="font-body text-on-surface group-hover:text-primary font-medium">LinkedIn</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary" data-icon="north_east">north_east</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-surface-container-low rounded-xl hover:bg-primary-container/20 transition-all duration-300" href="#">
+<span class="font-body text-on-surface group-hover:text-primary font-medium">GitHub</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary" data-icon="north_east">north_east</span>
+</a>
+<a class="group flex items-center justify-between p-4 bg-surface-container-low rounded-xl hover:bg-primary-container/20 transition-all duration-300" href="#">
+<span class="font-body text-on-surface group-hover:text-primary font-medium">ResearchGate</span>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary" data-icon="north_east">north_east</span>
+</a>
+</div>
+</section>
+<!-- Decorative Image -->
+<div class="mt-8 rounded-2xl overflow-hidden shadow-2xl relative aspect-[4/3]">
+<img class="w-full h-full object-cover grayscale-[20%] sepia-[10%] brightness-105" data-alt="Minimal aesthetic workspace with soft morning light, a delicate vase of flowers, and a notebook on a white marble desk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPjlCN42nSp8Ksy7ceBNFdBHt1eASoWSroeFbjPan2HM6y_b9uNLOFrVCwdovjsKRYMRqVKsVZm15zQt-RfAKJU7b85B4EM6ZStsCyc-SdK0oTeS1WVw7L2vmQEHXi-gNZ-v9PkuiqKIhzXoU4kUWgvhZWNh88a8IHKFLN9JIgTUlwlHirMpJSne-dCGkoEZ2lCRvxLvYnV3-bZGNP-8r9y4LMXIiB8UooBPFRPBeTPnCO1859TJEjRY0UqcfckzrOjEMA7Uv4wHw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 flex flex-col items-center gap-6 border-t border-slate-200/10 bg-slate-50">
+<div class="flex gap-8">
+<a class="font-sans text-manrope text-sm tracking-wide text-slate-400 hover:text-blue-600 transition-all opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="font-sans text-manrope text-sm tracking-wide text-slate-400 hover:text-blue-600 transition-all opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="font-sans text-manrope text-sm tracking-wide text-slate-400 hover:text-blue-600 transition-all opacity-80 hover:opacity-100" href="#">ResearchGate</a>
+</div>
+<p class="font-sans text-manrope text-sm tracking-wide text-slate-500 opacity-80">© 2024 Editorial Data Artistry. Scholarly and Rigorous.</p>
+</footer>
+</body></html>

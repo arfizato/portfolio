@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Entries Catalog | Editorial Data Artistry</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-container": "#a1c2ff",
+                    "on-primary-fixed": "#002755",
+                    "secondary": "#993d75",
+                    "primary": "#3c5f99",
+                    "on-secondary-fixed": "#721b53",
+                    "on-primary-container": "#123c74",
+                    "on-primary-fixed-variant": "#1e457d",
+                    "on-error-container": "#65000b",
+                    "secondary-dim": "#8b3168",
+                    "surface-container-highest": "#dee3e8",
+                    "primary-fixed": "#a1c2ff",
+                    "on-surface-variant": "#5a6064",
+                    "on-tertiary": "#e1fffb",
+                    "background": "#f8f9fc",
+                    "surface-dim": "#d5dbe1",
+                    "surface-container-high": "#e5e8ed",
+                    "on-error": "#fff7f6",
+                    "error-dim": "#70030f",
+                    "surface-container-low": "#f2f4f7",
+                    "on-tertiary-fixed": "#004440",
+                    "on-secondary-fixed-variant": "#953971",
+                    "on-secondary": "#fff7f8",
+                    "tertiary-fixed-dim": "#41e5db",
+                    "on-surface": "#2e3337",
+                    "on-tertiary-container": "#005854",
+                    "surface": "#f8f9fc",
+                    "surface-container": "#ebeef2",
+                    "outline-variant": "#adb2b8",
+                    "inverse-on-surface": "#9b9da0",
+                    "surface-tint": "#3c5f99",
+                    "on-tertiary-fixed-variant": "#00635e",
+                    "error-container": "#f56965",
+                    "surface-variant": "#dee3e8",
+                    "surface-bright": "#f8f9fc",
+                    "outline": "#767b80",
+                    "on-secondary-container": "#892f67",
+                    "tertiary-dim": "#005e59",
+                    "inverse-surface": "#0c0f11",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ac3434",
+                    "secondary-fixed-dim": "#ffc4e0",
+                    "secondary-fixed": "#ffd8e9",
+                    "secondary-container": "#ffd8e9",
+                    "on-background": "#2e3337",
+                    "tertiary-fixed": "#55f3e9",
+                    "on-primary": "#f8f8ff",
+                    "tertiary": "#006b66",
+                    "inverse-primary": "#94b7f7",
+                    "primary-fixed-dim": "#92b4f4",
+                    "tertiary-container": "#55f3e9",
+                    "primary-dim": "#2f538c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Newsreader", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f8f9fc; color: #2e3337; }
+        .newsreader { font-family: 'Newsreader', serif; }
+        .manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(20px); }
+        .sky-gradient { background: linear-gradient(135deg, #a1c2ff 0%, #ffd8e9 100%); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full flex justify-between items-center px-8 py-4 max-w-full bg-white/40 backdrop-blur-xl z-50 shadow-sm">
+<div class="text-2xl font-serif italic text-blue-900 newsreader">Editorial Data Artistry</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-slate-500 font-medium hover:text-blue-600 transition-opacity duration-300" href="#">Home</a>
+<a class="text-blue-700 border-b-2 border-pink-300 font-semibold transition-opacity duration-300" href="#">Entries</a>
+<a class="text-slate-500 font-medium hover:text-blue-600 transition-opacity duration-300" href="#">About</a>
+<a class="text-slate-500 font-medium hover:text-blue-600 transition-opacity duration-300" href="#">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary text-2xl cursor-pointer hover:opacity-80 transition-opacity">menu_book</span>
+<img alt="Scholarly Author Avatar" class="w-10 h-10 rounded-full object-cover border-2 border-white/50 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8HZWYUND4iMShXjMefD3RXAQE8bsKlKR9PeuKcorTW1ckP7MHAJMvbkurSdzeoLZRZO6QiteV1BXJX9uF3b450CMz4tVqoNVn86q5Y-Nytvj_QgriuoVGSc7wbl4pwli5byDUwhQbGAuw51E_tRJHVb7w7AWXLlgNwatovCABxlMAcKYjPnEl0C5Bu2OI4oMauCGCxaUX0Yc5qEGUchgYnt9DdA5mxq6bLtdL6tLH3RDQGbGPWisPt5-aFWm00HYxFqGa4efxxxo"/>
+</div>
+</header>
+<main class="pt-32 pb-20 px-6 lg:px-24">
+<!-- Hero Section / Title -->
+<div class="max-w-4xl mb-16">
+<h1 class="text-6xl md:text-8xl newsreader font-light tracking-tight text-on-surface mb-8">The Archives</h1>
+<div class="flex flex-col md:flex-row md:items-end gap-8">
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed manrope font-light">
+                    A collection of intellectual pursuits categorized by their methodology. Here, data is more than a metric; it is a narrative woven through scholarly inquiry and technical rigor.
+                </p>
+<div class="flex gap-4">
+<div class="h-px w-24 bg-primary-fixed-dim self-center opacity-40"></div>
+</div>
+</div>
+</div>
+<!-- Filter Tabs -->
+<div class="max-w-4xl mx-auto mb-12 flex flex-wrap gap-3">
+<button class="flex items-center space-x-2 px-6 py-2.5 bg-white text-pink-700 border border-pink-100 rounded-full shadow-sm hover:shadow-md transition-all duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="auto_stories">auto_stories</span>
+<span class="font-sans manrope uppercase tracking-widest text-[11px] font-bold">Analytical Studies</span>
+</button>
+<button class="flex items-center space-x-2 px-6 py-2.5 bg-white text-slate-500 border border-slate-100 rounded-full hover:bg-blue-50 hover:text-blue-600 transition-all duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+<span class="font-sans manrope uppercase tracking-widest text-[11px] font-bold">Technical Deep Dives</span>
+</button>
+<button class="flex items-center space-x-2 px-6 py-2.5 bg-white text-slate-500 border border-slate-100 rounded-full hover:bg-slate-50 transition-all duration-300">
+<span class="font-sans manrope uppercase tracking-widest text-[11px] font-bold text-slate-400">View All</span>
+</button>
+</div>
+<!-- Entries Vertical List -->
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-col gap-12">
+<!-- Entry 1: Scholarly Study -->
+<article class="group grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-8 bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(46,51,55,0.06)] transition-all duration-300 hover:shadow-[0_20px_60px_rgba(46,51,55,0.1)]">
+<div class="md:col-span-5 aspect-[16/10] md:aspect-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="abstract flowing silk textures in shades of pale blue and lilac" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiSR-Iq7z34mxcu7kFFlcOYP4RkzZMWsP6xu6lWSVd0ABnA1KdGqzlk_I2qz14NO8_ON-j31hvO7eI6R3FGn55V8b5G6Jw6N744Rpb-i-BNhtcgNjVU2O3MbO-z3b8kZxOA5oiooqxE9MW0XeTej5zr-WVBUyhcsHRbXBXAytV-I3ML2vpC57fkafGjzEZqJh4JLne2jwaXrgWW9C5wC54TAV8Q6pabsP0tCBXOVHK_2npFEF5cQT6V_HL8QZ_C9Zsbm2zq0FDSdA"/>
+</div>
+<div class="md:col-span-7 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<div class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="auto_stories">auto_stories</span>
+<span class="manrope text-[11px] font-bold uppercase tracking-widest">Scholarly Study</span>
+</div>
+<span class="text-on-surface-variant text-xs manrope italic">14 min read</span>
+</div>
+<h2 class="text-3xl md:text-4xl newsreader font-medium mb-4 text-on-surface">The Semantics of Urban Silence</h2>
+<p class="text-on-surface-variant leading-relaxed manrope text-sm font-light mb-8 max-w-xl">
+                            An interpretative analysis of soundscape data from metropolitan hubs during periods of forced stasis, exploring the psychological resonance of quietude.
+                        </p>
+<a class="inline-flex items-center text-primary font-semibold text-sm group/link mt-auto" href="#">
+                            Read Exploration
+                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Entry 2: Technical Deep Dive -->
+<article class="group grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-8 bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(46,51,55,0.06)] transition-all duration-300 hover:shadow-[0_20px_60px_rgba(46,51,55,0.1)]">
+<div class="md:col-span-5 aspect-[16/10] md:aspect-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="minimalist 3D rendered geometric spheres" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC799jftXLgH4kKLRkoqeLqWtlYlpoEwAc_bMBTcstKXhLk8St2uB6LV0Yh6kEcAIrl90k69ak7eQnNQWKpdhe-1hM2Nti-fiCHsml6QwB1y5oFzjyXzPG3K6t24X-ooQlWVr7q7xUMwiII9LeZFESRTTeEotwToXR-ZnzQy7_4a9h06_kI_A9pKLVGU9g1LjgBcpyRgQ8C7EskJLQB2pysHQtUVs8u58KIrwC572aoOITadfhRGQHsqSXCPnia5KOEl5MXXBAmixY"/>
+</div>
+<div class="md:col-span-7 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<div class="bg-primary-container text-on-primary-container px-3 py-1 rounded-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="terminal">terminal</span>
+<span class="manrope text-[11px] font-bold uppercase tracking-widest">Technical Deep Dive</span>
+</div>
+<span class="text-on-surface-variant text-xs manrope italic">Python • PCA</span>
+</div>
+<h2 class="text-3xl md:text-4xl newsreader font-medium mb-4 text-on-surface">Latent Space Manifolds</h2>
+<p class="text-on-surface-variant leading-relaxed manrope text-sm font-light mb-8 max-w-xl">
+                            Architecting high-dimensional visualization pipelines using custom spectral embedding techniques to reveal hidden topological features in noisy sensor data.
+                        </p>
+<a class="inline-flex items-center text-primary font-semibold text-sm group/link mt-auto" href="#">
+                            Inspect Code
+                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Entry 3: Technical Deep Dive -->
+<article class="group grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-8 bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(46,51,55,0.06)] transition-all duration-300 hover:shadow-[0_20px_60px_rgba(46,51,55,0.1)]">
+<div class="md:col-span-5 aspect-[16/10] md:aspect-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="iridescent digital mesh representing a network landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAX8Tz75uJPVDfot597QN4La-zMuNIwbSg1i3L1ErsfooFY7wQOOSqZYEQEAutWwYK6yd1ePASjpl4GnYjsDtfzHcHxJGlPKeUvGoepBH5f4bEtOrhFPrZ-Sr-OxYq-eziae-ZG4BlWVLkmgbY-UuOYCUM5K7kBPm-5ahoXUXiWazE7FmcmvCn7-SH-oo0BsVFl4XbUNm9cWQKcQr9Xy6QGCGJ5-mTjhq2efGMEYqF0TxO94Wg1VY9RrDzp9htBsyNaszYJqcl6W4"/>
+</div>
+<div class="md:col-span-7 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<div class="bg-primary-container text-on-primary-container px-3 py-1 rounded-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="code">code</span>
+<span class="manrope text-[11px] font-bold uppercase tracking-widest">Technical Deep Dive</span>
+</div>
+<span class="text-on-surface-variant text-xs manrope italic">C++ • Real-time</span>
+</div>
+<h2 class="text-3xl md:text-4xl newsreader font-medium mb-4 text-on-surface">Neural Oscillators in Flux</h2>
+<p class="text-on-surface-variant leading-relaxed manrope text-sm font-light mb-8 max-w-xl">
+                            Optimizing real-time synchronization algorithms for distributed sensor arrays using bio-inspired feedback loops and predictive modeling.
+                        </p>
+<a class="inline-flex items-center text-primary font-semibold text-sm group/link mt-auto" href="#">
+                            View Architecture
+                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Entry 4: Scholarly Study -->
+<article class="group grid grid-cols-1 md:grid-cols-12 gap-0 md:gap-8 bg-surface-container-lowest rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(46,51,55,0.06)] transition-all duration-300 hover:shadow-[0_20px_60px_rgba(46,51,55,0.1)]">
+<div class="md:col-span-5 aspect-[16/10] md:aspect-auto overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="ethereal macro photography of ink swirling in water" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkmpcyAgyILZAjKI3PGyvDIqY7BFFB3sMj112JtTucPXt_QoKfEL0UgT9bfAQY3JELLFn04jbeP5LNb4Nt_7RUuKX2Plo7xcbXATvqi03eJ7JXKg_aKlU3JaB6_P-QWutAM2aL7xfHzVSzv8YQ1cpQ9E3suKevd3Q1GWqRcWjjPlQ5mUa2AbxSD9fkwzzzjONhcUhENx-b4E3udBV6-070mSxrAPDF3jzE_mXlUwOxJ7uMmk3mpeC7qeQUoA6i5Q2LiznV1C55toQ"/>
+</div>
+<div class="md:col-span-7 p-8 md:p-10 flex flex-col justify-center">
+<div class="flex items-center gap-2 mb-4">
+<div class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm" data-icon="menu_book">menu_book</span>
+<span class="manrope text-[11px] font-bold uppercase tracking-widest">Scholarly Study</span>
+</div>
+<span class="text-on-surface-variant text-xs manrope italic">22 min read</span>
+</div>
+<h2 class="text-3xl md:text-4xl newsreader font-medium mb-4 text-on-surface">The Geometry of Empathy</h2>
+<p class="text-on-surface-variant leading-relaxed manrope text-sm font-light mb-8 max-w-xl">
+                            Quantifying qualitative human connections through a structural lens, utilizing social graph theory to map the resilience of digital communities.
+                        </p>
+<a class="inline-flex items-center text-primary font-semibold text-sm group/link mt-auto" href="#">
+                            Read Narrative
+                            <span class="material-symbols-outlined ml-1 group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="full-width py-12 mt-20 bg-white flex flex-col items-center justify-center space-y-4 w-full">
+<div class="w-24 h-px bg-primary-fixed-dim opacity-30 mb-4"></div>
+<div class="flex space-x-8">
+<a class="font-sans manrope text-xs italic text-slate-400 hover:text-pink-400 transition-colors" href="#">Privacy Policy</a>
+<a class="font-sans manrope text-xs italic text-slate-400 hover:text-pink-400 transition-colors" href="#">Latex Support</a>
+<a class="font-sans manrope text-xs italic text-slate-400 hover:text-pink-400 transition-colors" href="#">Open Source</a>
+</div>
+<p class="font-sans manrope text-xs italic text-blue-900">© 2024 Editorial Data Artistry. A Scholarly Narrative.</p>
+</footer>
+<!-- Mobile Bottom Nav -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-white/80 backdrop-blur-lg flex justify-around items-center py-4 px-6 border-t border-slate-100 z-50">
+<div class="flex flex-col items-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] manrope uppercase tracking-tighter">Home</span>
+</div>
+<div class="flex flex-col items-center text-blue-700">
+<span class="material-symbols-outlined" data-icon="auto_stories" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+<span class="text-[10px] manrope uppercase tracking-tighter font-bold">Entries</span>
+</div>
+<div class="flex flex-col items-center text-slate-400">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<span class="text-[10px] manrope uppercase tracking-tighter">About</span>
+</div>
+</div>
+</body></html>

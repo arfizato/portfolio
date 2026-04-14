@@ -9,6 +9,7 @@ export const projects: Project[] = [
 		date: 'March 14, 2024',
 		tags: ['Acoustic Ecology', 'Signal Processing'],
 		readTime: '12 min',
+		category: 'scholarly',
 		image: {
 			src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD9tAIep-xRYYA0q8UW_NVV-lvhFA41expkHmrrvQ63iX7ytYqQ_zsQt5mjGpv3qVkO1cOL9Wk3gq9XpbyKRlcJwQzmOXiuAnyxkDqC0Zm75cPQRLVkXaUqnwJIk18w3kPA97uaNYnfmk4WahOFVVxmvmWKtdudOdHcWbhwlwwiM1kqxCyk5Ybd-VHygQgQtgh2KMBbvt0J-H6FyGMyjN7-4nNHAhROBMsR3KS9dWfyW1ECVm7QX2X2xFUJja-7u6KyWlvjP0ZhAnk',
 			alt: 'Minimalist abstract data visualization with soft pink and blue nodes'
@@ -23,6 +24,7 @@ export const projects: Project[] = [
 		date: 'Feb 28, 2024',
 		tags: ['NLP', 'Topic Modeling'],
 		readTime: '8 min',
+		category: 'scholarly',
 		image: {
 			src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAkdTJy6JJxIYLF_SEoVJg24958yWijgYep9fp1fSfyChiVIkchDK3G8w4qGSQ-ipT4dUXUWeKbKCziABT5E_rhUtkaDzvnPAhylASkTqPaXwYrzwJleBTSAJ-RAsmf5taRVv2rklERJPrlnwSxcTzPvHnJ-pc0xYlsaH9bP-zOjlug0NRAwEiqmwVAh1b_yL4nHxf3LNjV1lMUHZtzhbUQD0SkgFfO2mOg87BbUnMxgHkWyBwjfJ6Me7nUQl4i-IQKTdFO40yzIXw',
 			alt: 'Scholarly journal with elegant typography next to a prism reflecting light'
@@ -37,6 +39,7 @@ export const projects: Project[] = [
 		date: 'Jan 12, 2024',
 		tags: ['Complexity Theory', 'Financial Modeling'],
 		readTime: '15 min',
+		category: 'technical',
 		image: {
 			src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAwfDv92j92Ll_Xkrhs-6neckDVzBGytjDFLX3PBOch1Rj5a0Lt1MxtKhcKVT3xOb1ZAzsSdEMyrh6FaNd2tAjcIZcqZXww8BwUbv0I0QN0ZbOWUXEeWZzHhVXhh7ig96tu8NBkJhtPxA30V6u44Tx2_W29y0dT7p3a5_e1Xr545871yhH6ciS7AOSJEBRc5QEoHFDHWJgmn8C_aYRzKOHSU1S_1dWbDwX5IOuwG7AbI40Hky_blvZlr9e5Z2H0W63KJsRAjPhFE0U',
 			alt: 'Delicate watercolor style scatter plot with soft pastel points'
