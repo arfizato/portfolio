@@ -1,7 +1,11 @@
 <script lang="ts">
+	import { enhance } from '$app/forms';
 	import Footer from '$lib/components/Footer.svelte';
 	import ContactItem from '$lib/components/ContactItem.svelte';
 	import SocialLink from '$lib/components/SocialLink.svelte';
+
+	let { form } = $props();
+	let submitting = $state(false);
 </script>
 
 <svelte:head>
@@ -40,7 +44,17 @@
 					<div
 						class="sky-gradient absolute top-0 right-0 h-32 w-32 rounded-bl-full opacity-5"
 					></div>
-					<form class="relative z-10 space-y-8">
+					<form
+						class="relative z-10 space-y-8"
+						method="POST"
+						use:enhance={() => {
+							submitting = true;
+							return async ({ update }) => {
+								await update();
+								submitting = false;
+							};
+						}}
+					>
 						<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
 							<div class="space-y-2">
 								<label
@@ -50,8 +64,11 @@
 								<input
 									class="w-full rounded-lg border-none bg-surface-container-low p-4 text-on-surface outline-none transition-all duration-300 placeholder:opacity-30 focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container"
 									id="name"
+									name="name"
 									type="text"
 									placeholder="Emilia Noels"
+									value={form?.name ?? ''}
+									required
 								/>
 							</div>
 							<div class="space-y-2">
@@ -62,8 +79,11 @@
 								<input
 									class="w-full rounded-lg border-none bg-surface-container-low p-4 text-on-surface outline-none transition-all duration-300 placeholder:opacity-30 focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container"
 									id="email"
+									name="email"
 									type="email"
 									placeholder="hello@dataartistry.edu"
+									value={form?.email ?? ''}
+									required
 								/>
 							</div>
 						</div>
@@ -75,15 +95,28 @@
 							<textarea
 								class="w-full resize-none rounded-lg border-none bg-surface-container-low p-4 text-on-surface outline-none transition-all duration-300 placeholder:opacity-30 focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container"
 								id="message"
+								name="message"
 								rows="6"
 								placeholder="Share your inquiry or data narrative..."
-							></textarea>
+								required
+							>{form?.message ?? ''}</textarea>
 						</div>
+						{#if form?.error}
+							<p class="rounded-lg bg-error-container px-4 py-3 font-body text-sm text-on-error-container">
+								{form.error}
+							</p>
+						{/if}
+						{#if form?.success}
+							<p class="rounded-lg bg-primary-container px-4 py-3 font-body text-sm text-on-primary-container">
+								Thank you! Your message has been sent.
+							</p>
+						{/if}
 						<button
-							class="w-full rounded-full bg-gradient-to-r from-primary to-primary-dim px-10 py-4 font-body text-sm font-bold tracking-widest text-on-primary uppercase transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 active:scale-95 md:w-auto"
+							class="w-full rounded-full bg-gradient-to-r from-primary to-primary-dim px-10 py-4 font-body text-sm font-bold tracking-widest text-on-primary uppercase transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 active:scale-95 disabled:opacity-50 md:w-auto"
 							type="submit"
+							disabled={submitting}
 						>
-							Send Inquiry
+							{submitting ? 'Sending...' : 'Send Inquiry'}
 						</button>
 					</form>
 				</div>
