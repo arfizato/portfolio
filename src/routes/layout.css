@@ -73,6 +73,10 @@
 }
 
 /* === Base Styles === */
+html {
+	scrollbar-gutter: stable;
+}
+
 body {
 	font-family: 'Manrope', sans-serif;
 	background-color: #f8f9fc;
