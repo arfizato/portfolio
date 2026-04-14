@@ -1,9 +1,10 @@
 # TODO
 
 - favicon
-- contact page?
-- data format?
-- upload data to some DB/CDN or put everything in the repo as JSONs?
+- contact page? => yes
+- data format? = > json
+- upload data to some DB/CDN or put everything in the repo as JSONs? inhouse
+- which page is the experience/[slug] page? what does the `entries` page do ? /archive or /technical? => both
 - layout
   - navbar
   - which footer do we want (extended or compact)
@@ -11,6 +12,7 @@
 - landing page
   - add filter feature
 - /technical page is not responsive + out of sync with other pages
+  - smaller math equations & scroll
 
 # sv
 

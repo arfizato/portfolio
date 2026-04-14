@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Footer from '$lib/components/Footer.svelte';
+	import { projects } from '$lib/data/projects';
 </script>
 
 <svelte:head>
@@ -88,146 +89,54 @@
 			</div>
 			<!-- Project Cards Grid -->
 			<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-				<!-- Project 1 -->
-				<article
-					class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"
-				>
-					<div class="relative aspect-[4/3] overflow-hidden bg-surface-variant">
-						<img
-							class="h-full w-full object-cover grayscale-[20%] transition-transform duration-700 group-hover:scale-105"
-							alt="Minimalist abstract data visualization with soft pink and blue nodes"
-							src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9tAIep-xRYYA0q8UW_NVV-lvhFA41expkHmrrvQ63iX7ytYqQ_zsQt5mjGpv3qVkO1cOL9Wk3gq9XpbyKRlcJwQzmOXiuAnyxkDqC0Zm75cPQRLVkXaUqnwJIk18w3kPA97uaNYnfmk4WahOFVVxmvmWKtdudOdHcWbhwlwwiM1kqxCyk5Ybd-VHygQgQtgh2KMBbvt0J-H6FyGMyjN7-4nNHAhROBMsR3KS9dWfyW1ECVm7QX2X2xFUJja-7u6KyWlvjP0ZhAnk"
-						/>
-						<div class="absolute top-4 left-4">
-							<span
-								class="rounded-full bg-white/90 px-3 py-1 font-label text-[10px] tracking-widest text-on-surface uppercase backdrop-blur-sm"
-								>March 14, 2024</span
-							>
+				{#each projects as project}
+					<article
+						class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"
+					>
+						<div class="relative aspect-[4/3] overflow-hidden bg-surface-variant">
+							<img
+								class="h-full w-full object-cover grayscale-[20%] transition-transform duration-700 group-hover:scale-105"
+								alt={project.image.alt}
+								src={project.image.src}
+							/>
+							<div class="absolute top-4 left-4">
+								<span
+									class="rounded-full bg-white/90 px-3 py-1 font-label text-[10px] tracking-widest text-on-surface uppercase backdrop-blur-sm"
+									>{project.date}</span
+								>
+							</div>
 						</div>
-					</div>
-					<div class="flex flex-grow flex-col p-8">
-						<div class="mb-4 flex items-center gap-4">
-							<span class="font-label text-[10px] font-bold tracking-widest text-primary uppercase"
-								>Acoustic Ecology</span
+						<div class="flex flex-grow flex-col p-8">
+							<div class="mb-4 flex items-center gap-4">
+								<span
+									class="font-label text-[10px] font-bold tracking-widest text-primary uppercase"
+									>{project.tags[0]}</span
+								>
+								<span class="flex items-center gap-1 text-[10px] text-outline">
+									<span class="material-symbols-outlined text-[14px]">schedule</span>
+									{project.readTime}
+								</span>
+							</div>
+							<h3
+								class="mb-4 font-serif text-2xl leading-snug text-on-surface transition-colors group-hover:text-primary"
 							>
-							<span class="flex items-center gap-1 text-[10px] text-outline">
-								<span class="material-symbols-outlined text-[14px]">schedule</span> 12 min
-							</span>
+								{project.title}
+							</h3>
+							<p class="mb-8 font-body text-sm leading-relaxed text-on-surface-variant">
+								{project.description}
+							</p>
+							<div class="mt-auto border-t border-outline-variant/10 pt-6">
+								<a
+									class="flex items-center justify-between font-label text-xs font-bold tracking-widest text-primary uppercase transition-transform hover:translate-x-2"
+									href="/entries/{project.slug}"
+								>
+									{project.cta}
+									<span class="material-symbols-outlined text-sm">arrow_forward</span>
+								</a>
+							</div>
 						</div>
-						<h3
-							class="mb-4 font-serif text-2xl leading-snug text-on-surface transition-colors group-hover:text-primary"
-						>
-							The Geometry of Silence: Analysis of Ambient Noise
-						</h3>
-						<p class="mb-8 font-body text-sm leading-relaxed text-on-surface-variant">
-							A longitudinal study exploring frequency correlations with local biodiversity patterns
-							in metropolitan hubs.
-						</p>
-						<div class="mt-auto border-t border-outline-variant/10 pt-6">
-							<a
-								class="flex items-center justify-between font-label text-xs font-bold tracking-widest text-primary uppercase transition-transform hover:translate-x-2"
-								href="#"
-							>
-								Read Analysis
-								<span class="material-symbols-outlined text-sm">arrow_forward</span>
-							</a>
-						</div>
-					</div>
-				</article>
-
-				<!-- Project 2 -->
-				<article
-					class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"
-				>
-					<div class="relative aspect-[4/3] overflow-hidden bg-surface-variant">
-						<img
-							class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-							alt="Scholarly journal with elegant typography next to a prism reflecting light"
-							src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkdTJy6JJxIYLF_SEoVJg24958yWijgYep9fp1fSfyChiVIkchDK3G8w4qGSQ-ipT4dUXUWeKbKCziABT5E_rhUtkaDzvnPAhylASkTqPaXwYrzwJleBTSAJ-RAsmf5taRVv2rklERJPrlnwSxcTzPvHnJ-pc0xYlsaH9bP-zOjlug0NRAwEiqmwVAh1b_yL4nHxf3LNjV1lMUHZtzhbUQD0SkgFfO2mOg87BbUnMxgHkWyBwjfJ6Me7nUQl4i-IQKTdFO40yzIXw"
-						/>
-						<div class="absolute top-4 left-4">
-							<span
-								class="rounded-full bg-white/90 px-3 py-1 font-label text-[10px] tracking-widest text-on-surface uppercase backdrop-blur-sm"
-								>Feb 28, 2024</span
-							>
-						</div>
-					</div>
-					<div class="flex flex-grow flex-col p-8">
-						<div class="mb-4 flex items-center gap-4">
-							<span class="font-label text-[10px] font-bold tracking-widest text-primary uppercase"
-								>NLP</span
-							>
-							<span class="flex items-center gap-1 text-[10px] text-outline">
-								<span class="material-symbols-outlined text-[14px]">schedule</span> 8 min
-							</span>
-						</div>
-						<h3
-							class="mb-4 font-serif text-2xl leading-snug text-on-surface transition-colors group-hover:text-primary"
-						>
-							Linguistic Drift in Digital Correspondence
-						</h3>
-						<p class="mb-8 font-body text-sm leading-relaxed text-on-surface-variant">
-							Tracking the evolution of semantic meaning through five years of personal email
-							archives using NLP and LDA.
-						</p>
-						<div class="mt-auto border-t border-outline-variant/10 pt-6">
-							<a
-								class="flex items-center justify-between font-label text-xs font-bold tracking-widest text-primary uppercase transition-transform hover:translate-x-2"
-								href="#"
-							>
-								View Repository
-								<span class="material-symbols-outlined text-sm">arrow_forward</span>
-							</a>
-						</div>
-					</div>
-				</article>
-
-				<!-- Project 3 -->
-				<article
-					class="journal-shadow group flex flex-col overflow-hidden rounded-xl border border-outline-variant/10 bg-surface-container-lowest"
-				>
-					<div class="relative aspect-[4/3] overflow-hidden bg-surface-variant">
-						<img
-							class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-							alt="Delicate watercolor style scatter plot with soft pastel points"
-							src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwfDv92j92Ll_Xkrhs-6neckDVzBGytjDFLX3PBOch1Rj5a0Lt1MxtKhcKVT3xOb1ZAzsSdEMyrh6FaNd2tAjcIZcqZXww8BwUbv0I0QN0ZbOWUXEeWZzHhVXhh7ig96tu8NBkJhtPxA30V6u44Tx2_W29y0dT7p3a5_e1Xr545871yhH6ciS7AOSJEBRc5QEoHFDHWJgmn8C_aYRzKOHSU1S_1dWbDwX5IOuwG7AbI40Hky_blvZlr9e5Z2H0W63KJsRAjPhFE0U"
-						/>
-						<div class="absolute top-4 left-4">
-							<span
-								class="rounded-full bg-white/90 px-3 py-1 font-label text-[10px] tracking-widest text-on-surface uppercase backdrop-blur-sm"
-								>Jan 12, 2024</span
-							>
-						</div>
-					</div>
-					<div class="flex flex-grow flex-col p-8">
-						<div class="mb-4 flex items-center gap-4">
-							<span class="font-label text-[10px] font-bold tracking-widest text-primary uppercase"
-								>Complexity Theory</span
-							>
-							<span class="flex items-center gap-1 text-[10px] text-outline">
-								<span class="material-symbols-outlined text-[14px]">schedule</span> 15 min
-							</span>
-						</div>
-						<h3
-							class="mb-4 font-serif text-2xl leading-snug text-on-surface transition-colors group-hover:text-primary"
-						>
-							Fractal Patterns in Financial Volatility
-						</h3>
-						<p class="mb-8 font-body text-sm leading-relaxed text-on-surface-variant">
-							Exploring why market movements mimic the branching of trees more than the rolling of
-							dice in chaotic systems.
-						</p>
-						<div class="mt-auto border-t border-outline-variant/10 pt-6">
-							<a
-								class="flex items-center justify-between font-label text-xs font-bold tracking-widest text-primary uppercase transition-transform hover:translate-x-2"
-								href="#"
-							>
-								Full Dataset
-								<span class="material-symbols-outlined text-sm">arrow_forward</span>
-							</a>
-						</div>
-					</div>
-				</article>
+					</article>
+				{/each}
 			</div>
 
 			<div class="mt-24 flex justify-center">
