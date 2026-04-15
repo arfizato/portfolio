@@ -9,7 +9,7 @@
 	};
 </script>
 
-<div class="flex items-start gap-4">
+<div class="flex items-start gap-4 pt-4">
 	<div class="h-12 w-1 {colorMap[color] || colorMap.primary}"></div>
 	<div class="space-y-2">
 		<h5 class="font-headline text-xl font-bold italic">{title}</h5>

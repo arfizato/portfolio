@@ -79,7 +79,7 @@ Moving beyond standard stochastic gradient descent, we utilize an adaptive momen
 <FeaturePoint color="secondary" title="Memory Efficiency" description="Reduces weight footprint per thread by 40% via static weight offloading." />
 
 </div>
-<div slot="code">
+<div slot="code" class="h-full">
 
 <CodeEditor filename="module_alpha.py" notes="Notes: This implementation leverages vectorized operations in PyTorch for GPU acceleration. Convergence is typically achieved within 200 epochs for latent dimensions < 512.">
 <pre><span class="font-bold text-blue-400">def</span> <span class="text-emerald-400">align_manifold</span>(z_space, target_distribution):
