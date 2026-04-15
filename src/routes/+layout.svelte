@@ -6,16 +6,16 @@
 
 	let { children } = $props();
 
-	const routeToPage: Record<string, 'home' | 'entries' | 'about' | 'contact'> = {
-		'/': 'home',
-		'/journal': 'entries',
-		'/technical': 'entries',
-		'/entries': 'entries',
-		'/about': 'about',
-		'/contact': 'contact'
-	};
+	function getActivePage(pathname: string): 'home' | 'entries' | 'about' | 'contact' {
+		if (pathname === '/') return 'home';
+		if (pathname === '/about') return 'about';
+		if (pathname === '/contact') return 'contact';
+		if (pathname.startsWith('/entries') || pathname === '/journal' || pathname === '/technical')
+			return 'entries';
+		return 'home';
+	}
 
-	let activePage = $derived(routeToPage[page.url.pathname] ?? 'home');
+	let activePage = $derived(getActivePage(page.url.pathname));
 </script>
 
 <svelte:head>

@@ -1,21 +1,31 @@
 import { mdsvex } from 'mdsvex';
 import adapter from '@sveltejs/adapter-netlify';
-import { relative, sep } from 'node:path';
+import { join, relative, sep } from 'node:path';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	compilerOptions: {
-		// defaults to rune mode for the project, except for `node_modules`. Can be removed in svelte 6.
 		runes: ({ filename }) => {
 			const relativePath = relative(import.meta.dirname, filename);
 			const pathSegments = relativePath.toLowerCase().split(sep);
 			const isExternalLibrary = pathSegments.includes('node_modules');
 
-			return isExternalLibrary ? undefined : true;
+			if (isExternalLibrary) return undefined;
+			if (filename.endsWith('.md') || filename.endsWith('.svx')) return false;
+			if (filename.includes('lib/layouts/') || filename.includes('components/entries/'))
+				return false;
+			return true;
 		}
 	},
 	kit: { adapter: adapter() },
-	preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
+	preprocess: [
+		mdsvex({
+			extensions: ['.svx', '.md'],
+			layout: {
+				technical: join(import.meta.dirname, 'src/lib/layouts/technical.svelte')
+			}
+		})
+	],
 	extensions: ['.svelte', '.svx', '.md']
 };
 
