@@ -22,7 +22,8 @@ const config = {
 		mdsvex({
 			extensions: ['.svx', '.md'],
 			layout: {
-				technical: join(import.meta.dirname, 'src/lib/layouts/technical.svelte')
+				technical: join(import.meta.dirname, 'src/lib/layouts/technical.svelte'),
+				scholarly: join(import.meta.dirname, 'src/lib/layouts/scholarly.svelte')
 			}
 		})
 	],
