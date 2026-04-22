@@ -1,3 +1,7 @@
+## Authoring
+
+Adding a new entry (technical write-up, journal post, timeline item, project page, …)? Read **[guide.md](./guide.md)** — it covers the `entries/` markdown pattern, the available layouts and components, and the pitfalls the codebase has already paid for. Future agents and humans: start there before touching `src/routes/entries/` or `src/lib/components/entries/`.
+
 # TODO
 
 - favicon
