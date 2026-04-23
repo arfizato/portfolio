@@ -1,0 +1,130 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	/* === Color Palette (Material Design 3 tokens) === */
+	--color-primary: #3c5f99;
+	--color-primary-dim: #2f538c;
+	--color-primary-container: #a1c2ff;
+	--color-primary-fixed: #a1c2ff;
+	--color-primary-fixed-dim: #92b4f4;
+	--color-on-primary: #f8f8ff;
+	--color-on-primary-container: #123c74;
+	--color-on-primary-fixed: #002755;
+	--color-on-primary-fixed-variant: #1e457d;
+	--color-inverse-primary: #94b7f7;
+
+	--color-secondary: #993d75;
+	--color-secondary-dim: #8b3168;
+	--color-secondary-container: #ffd8e9;
+	--color-secondary-fixed: #ffd8e9;
+	--color-secondary-fixed-dim: #ffc4e0;
+	--color-on-secondary: #fff7f8;
+	--color-on-secondary-container: #892f67;
+	--color-on-secondary-fixed: #721b53;
+	--color-on-secondary-fixed-variant: #953971;
+
+	--color-tertiary: #006b66;
+	--color-tertiary-dim: #005e59;
+	--color-tertiary-container: #55f3e9;
+	--color-tertiary-fixed: #55f3e9;
+	--color-tertiary-fixed-dim: #41e5db;
+	--color-on-tertiary: #e1fffb;
+	--color-on-tertiary-container: #005854;
+	--color-on-tertiary-fixed: #004440;
+	--color-on-tertiary-fixed-variant: #00635e;
+
+	--color-error: #ac3434;
+	--color-error-dim: #70030f;
+	--color-error-container: #f56965;
+	--color-on-error: #fff7f6;
+	--color-on-error-container: #65000b;
+
+	--color-surface: #f8f9fc;
+	--color-surface-bright: #f8f9fc;
+	--color-surface-dim: #d5dbe1;
+	--color-surface-variant: #dee3e8;
+	--color-surface-tint: #3c5f99;
+	--color-surface-container: #ebeef2;
+	--color-surface-container-low: #f2f4f7;
+	--color-surface-container-lowest: #ffffff;
+	--color-surface-container-high: #e5e8ed;
+	--color-surface-container-highest: #dee3e8;
+
+	--color-on-surface: #2e3337;
+	--color-on-surface-variant: #5a6064;
+	--color-on-background: #2e3337;
+	--color-background: #f8f9fc;
+	--color-outline: #767b80;
+	--color-outline-variant: #adb2b8;
+	--color-inverse-surface: #0c0f11;
+	--color-inverse-on-surface: #9b9da0;
+
+	/* === Typography === */
+	--font-headline: 'Newsreader', serif;
+	--font-body: 'Manrope', sans-serif;
+	--font-label: 'Manrope', sans-serif;
+
+	/* === Border Radius === */
+	--radius: 0.25rem;
+	--radius-lg: 0.5rem;
+	--radius-xl: 1.5rem;
+}
+
+/* === Base Styles === */
+html {
+	scrollbar-gutter: stable;
+}
+
+body {
+	font-family: 'Manrope', sans-serif;
+	background-color: #f8f9fc;
+	color: #2e3337;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* === Material Symbols === */
+.material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 24;
+}
+
+/* === Serif Italic Helper === */
+.serif-italic {
+	font-family: 'Newsreader', serif;
+	font-style: italic;
+}
+
+/* === Custom Utilities === */
+.glass-nav {
+	backdrop-filter: blur(24px);
+}
+
+.atmospheric-hero {
+	background: linear-gradient(135deg, #a1c2ff 0%, #ffd8e9 100%);
+}
+
+.sky-gradient {
+	background: linear-gradient(135deg, #a1c2ff 0%, #ffd8e9 100%);
+}
+
+.journal-shadow {
+	box-shadow: 0 12px 40px rgba(46, 51, 55, 0.06);
+}
+
+.timeline-line {
+	background: linear-gradient(to bottom, transparent, #3c5f99, #3c5f99, transparent);
+}
+
+.divider-fade {
+	background: linear-gradient(90deg, transparent, #adb2b8, transparent);
+}
+
+.math-block {
+	line-height: 1.8;
+	letter-spacing: 0.02em;
+}

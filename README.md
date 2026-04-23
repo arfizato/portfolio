@@ -1,3 +1,23 @@
+## Authoring
+
+Adding a new entry (technical write-up, journal post, timeline item, project page, …)? Read **[guide.md](./guide.md)** — it covers the `entries/` markdown pattern, the available layouts and components, and the pitfalls the codebase has already paid for. Future agents and humans: start there before touching `src/routes/entries/` or `src/lib/components/entries/`.
+
+# TODO
+
+- favicon
+- contact page? => yes
+- data format? = > json
+- upload data to some DB/CDN or put everything in the repo as JSONs? inhouse
+- which page is the experience/[slug] page? what does the `entries` page do ? /archive or /technical? => both
+- layout
+  - navbar
+  - which footer do we want (extended or compact)
+  - put projects/entries in footer
+- landing page
+  - add filter feature
+- /technical page is not responsive + out of sync with other pages
+  - smaller math equations & scroll
+
 # sv
 
 Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).

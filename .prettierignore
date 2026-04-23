@@ -7,3 +7,6 @@ bun.lockb
 
 # Miscellaneous
 /static/
+
+# mdsvex files — prettier breaks Svelte component tags in markdown
+*.md
